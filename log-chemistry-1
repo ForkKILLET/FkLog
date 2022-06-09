@@ -1,0 +1,370 @@
+# $\ce{S}$
+
+_lost+found_
+
+- $\ce{CuSO4 + H2S = CuS v + H2SO4 }$
+- $\ce{2NaOH + H2S = Na2S + 2H2O }$
+- $\ce{SO2}$：食物（葡萄酒、果酒）的防腐剂、衣物的漂白剂
+- 鉴别 $\ce{SO2}$ 和 $\ce{CO2}$
+  - 澄清石灰水
+  - $\ce{BaCl2}$ 不行
+  - $\ce{Ba(NO3)2}$ 行
+- $\ce{H2SO4 (浓) \neq 2H+ + SO4^2-}$
+- $\ce{3SO3^2- + 2H+ + 2NO3- -> 3SO4^2- + 2NO ^ +H2O}$
+
+# $\ce{N}$
+
+## $\ce{N2}$
+
+- 物理性质
+
+  - 低沸点 （用途 1）
+- 无色无味气体
+  - $\rho < \rho(空气)$
+  - 不溶于 $\ce{H2O}$
+- 用途
+
+  1. 液氮用于医疗手术
+  2. 粮食瓜果的保护气
+  3. 灯泡的填充气
+- 制备
+
+  - 工业上：分离液态空气
+    - 降温加压
+    - 升温，先得 $\ce{N2}$ 再得 $\ce{O2}$
+      - $T_沸(\ce{N2})<T_沸(\ce{O2})$ 
+- 化学性质
+
+  - 不活泼 （用途 2），很难发生化学反应
+  - 还原性和还原性
+  - $\ce{N#N}$
+- 反应
+
+  1. $\ce{N2 + O2 ->[放电 \or 高温] 2NO}$ 还原性
+  2. $\ce{N2 + 3H2 <=>[\text{cat.}][高温 \and 高压] 2NH3}$ 氧化性
+  3. $\ce{N2 + 3Mg ->[点燃] Mg3N2}$ 氧化性
+  4. $\ce{N2 + 6H+ + 6e- ->[根瘤菌固氮酶] 2NH3}$ （半反应）氧化性
+  5. $\ce{2NO + O2 -> 2NO2}$
+- 固氮
+
+  - 游离态的 $\ce{N2}$ 很难被植物吸收
+  - 氮的固定：游离态 $\ce{->}$ 化合态
+  - 方法
+    1. 天然·大气固氮：$\ce{N2 + O2 ->[放电 \or 高温] 2NO}\color{blue}{(1)}$
+       - $\ce{N2 ->[放电] NO ->[O2] NO2 ->[H2O] HNO3}$ （硝态氮肥）
+    2. 天然·生物固氮：$\ce{N2 + 6H+ + 6e- ->[根瘤菌固氮酶] 2NH3 }\color{blue}{(4)}$ 
+    3. 人工固氮：$\ce{N2 + 3H2 ->[\text{cat.}][高温 \and 高压] 2NH3}\color{blue}{(2)}$ （铵态氮肥）
+
+## $\ce{N_xO_y}$
+
+|                                         | 色态味             | 溶解性       | 毒性         | 酸酐                             | 氧化物               | 用途、危害           |
+| --------------------------------------- | ------------------ | ------------ | ------------ | -------------------------------- | -------------------- | -------------------- |
+| $\ce{\overset{+1}{N}_2O}$               | 无色气体           |              |              | -                                |                      | 麻醉剂，笑气         |
+| $\ce{\overset{+2}{N}O}$                 | 无色气体           | 难           | 有毒         | -                                | 不成盐               | 与血红蛋白结合，中毒 |
+| $\ce{\overset{+3}{N}_2O3}$              |                    |              |              | $\ce{H\overset{+3}{N}O2}$ 的酸酐 | 酸性                 |                      |
+| $\ce{\overset{+4}{N}O2}$                | 红棕色，刺激性气体 | 易           | 有毒         | 混酐                             | ~~酸性~~（价态改变） | 酸雨，光化学烟雾     |
+| $\ce{\overset{\color{red}{+4}}{N}_2O4}$ |                    |              |              | -                                |                      |                      |
+| $\ce{\overset{+5}{N}_2O5}$              | 无色晶体           | + HN+ HNO3O3 | + HNO3+ HNO3 | $\ce{H\overset{+5}{N}O3}$ 的酸酐 | 酸性                 |                      |
+
+- 反应
+
+  1. $$
+     \left\{
+     \begin{array}{l}
+     \ce{2NO2 + H2O -> HNO3 + HNO2} \\
+     \ce{HNO2 + NO2 -> HNO3 + NO}
+     \end{array}
+     \right.
+     \implies \ce{3NO2 + H2O -> 2HNO3 + NO}
+     $$
+
+     （$\ce{NO2}$ 为 $\ce{HNO3, HNO2}$ 的混酐）
+     $n(氧化剂):n(还原剂) = 1:2$
+
+  2. $\ce{2NO2 + 2NaOH -> NaNO3 + NaNO2 + H2O}$
+
+  3. $\ce{2NO2 <=> N2O4}$，没有纯 $\ce{NO2}$，但**仅在平衡中考虑**
+
+  4. $\ce{4NO + 3O2 + 2H2O -> 4HNO3}$
+
+  5. $\ce{4NO2 + O2 + 2H2O -> 4HNO3}$
+
+- 收集
+
+  - $\ce{NO}$ 排水集气法（难溶于水，且 $\rho \approx \rho(空气)$）
+  - $\ce{NO2}$ 向上排空气法
+
+## $\ce{NH3}$
+
+- 物理性质
+  - 色态味：无色，有刺激性气味的气体
+  - 极易溶于水（$1:600$）
+  - 易液化
+  - 浓度
+    - 浓度越大，密度越小（$\rho < \rho(\ce{H2O})$）（另一具有该性质的物质：酒精）
+    - 溶质以 $\ce{NH3}$ 计（？）
+- 化学性质
+  - **高中唯一**碱性气体
+  - 还原性，氧化性
+- 反应
+
+  - 氨的催化氧化
+    - $\ce{4NH3 + 5O2 ->[\text{cat.} (Cr2O3 \or\ Pt)][\Delta] 4NO + 6H2O \color{magenta}{+ Q}}$
+  - 氨选择性催化处理 $\ce{NO, NO2}$
+    - $\ce{4NO + 4NH3 + O2 ->[\text{cat.}, \Delta=140^\circ C] 4N2 + 6H2O}$
+    - $\ce{6NO2 + 8NH3 ->[\text{cat.}, \Delta=140^\circ C] 7N2 + 12 H2O}$
+  - 铁触媒分解
+    - $\ce{2NH3 ->[Fe \text{cat.}] N2 + 3H2 \color{magenta}{- Q}}$
+  - 平衡
+    - 离子平衡（前），化学平衡（后）： $\ce{NH4+ + OH- <=> NH3*H2O <=> NH3 ^ + H2O}$（一水合氨：可溶性一元弱碱，**“三分三离”**）
+    - 打破平衡：$\ce{NH4+ + OH- ->[\Delta] NH3 ^ + H2O}$（一水合氨：不稳定）
+  - 与盐溶液反应
+    - $\ce{FeCl3 + 3NH3*H2O -> Fe(OH3) v + 3NH4Cl}$（可溶性碱制难溶性碱）
+    - ……（简单的）
+
+
+- 与酸反应
+
+    - $\ce{NH3(g) + HCl(g)-> NH4Cl(s)}$ 
+    - $\ce{NH3(g) + HNO3(g) -> \color{orange}{NH4NO3}}$：硝铵
+    - $\ce{2NH3 + H2SO4 -> \color{orange}(NH4)2SO4}$：硫铵
+    - $\ce{NH3 + H2SO4 -> NH4HSO4}$
+    - $\ce{2NH3 + CO2 + H2O -> (NH4)2CO3}$
+    - $\ce{NH3 + CO2 + H2O -> \color{orange}{NH4\color{red}{H}CO3}}$：碳铵
+
+- 检验
+  - 能使红色石蕊试纸变蓝
+  - 能与浓盐酸反应产生白烟
+
+- 用途
+
+  - 氮肥
+  - 制冷剂
+  - 化工原料
+    - 无机：硝酸、铵盐
+    - 有机：尿素
+
+- 喷泉实验
+  - 装置
+    ![装置](/home/.config/Typora/typora-user-images/image-20220321133229206.png)
+    烧瓶要干燥，气密性要好，氨气纯度要高
+    
+  - 操作：挤压胶头滴管，打开止水夹
+
+  - 现象
+    - 烧杯中溶液由玻璃管进入（倒置的圆底）烧瓶
+    - 烧瓶内液体呈红色
+    - 如果烧瓶没有收满：剩余的是 $\ce{NH3}$ 中混有的空气
+
+  - 结论：$\ce{NH3}$ 呈碱性，极易溶于水
+
+    ---
+
+- 不共存的气体
+  - $\ce{H2 + F2 -> HF}$
+  - $\ce{H2S + SO2 -> S v + H2O}$
+  - $\ce{NH3 + HCl -> NH4Cl}$
+
+- 鉴别 $\ce{NO2, Br2}$（均为红棕色气体）
+
+  - $\ce{H2O}$：$\ce{Br2 -> 橙黄色, NO2 -> 无色}$
+  - $\ce{AgNO3(aq)}$：$\ce{Br2 -> AgBr v}$ 淡黄色沉淀
+
+  - $\ce{CCl4}$：$\ce{Br2 -> 红棕色}$
+  - ~~石蕊试液~~：都为酸性气体
+  - $\ce{淀粉 KI(aq)}$：$\ce{NO2 ->[H2O] HNO3}$，也能氧化 $\ce{I-}$
+
+
+## $\ce{(NH4)_xA_y}$ 铵盐
+
+- 物理性质
+  - 色、态：都是晶体
+    - $\ce{(NH4)2Cr2O7}$：橙红色晶体
+    - $\ce{NH4\overset{+3}{Fe}(SO4)2*12H2O}$：淡紫色晶体
+    - $\ce{NH4MnO4}$：紫黑色
+    - 其他：多为无色或白色晶体 
+  - 都能溶于水
+  - 有刺激性气味
+  - 易液化 $T_沸=-33.35^\circ C$
+  
+- 化学性质
+  - 能电离出 $\ce{NH4+}$（正四面体结构）
+
+  -  电子式
+    ![电子式](/home/.config/Typora/typora-user-images/image-20220318215733292.png)
+    
+    一个是配位键
+
+- 反应
+  1. $\ce{NH4+ + OH- ->[\Delta] NH3 ^ + H2O}$
+  2. $\ce{2NH4Cl + Ca(OH)2 ->[\Delta] 2NH3 ^ + 2H2O + CaCl2}$
+  3. $\ce{NH4HCO3 ->[\Delta=30^\circ C] NH3 ^ + CO2 ^ + H2O}$
+  4. $\ce{NH4Cl ->[\Delta] NH3 ^ + HCl ^ \color{magenta}{- Q}}$
+  5. $\ce{NH3 + HCl -> NH4Cl}$
+  6. $\ce{(NH4)2Cr2O7 ->[点燃] Cr2O3 + N2 ^ + 4H2O \color{magenta}{+ Q}}$
+
+- 与碱反应
+  - 检验 $\ce{NH4+}$
+    1. 加入 $\ce{B_x(OH)_y(B=Na...,aq,浓)}$ （**强碱**、最好是浓的，目的：产生大量 $\ce{NH3}$），加热（液-液加热装置）。
+       - 试管口放一张湿润的红色石蕊试纸，变蓝则有 $\ce{NH4+}$
+       - 或用蘸有 $\ce{HCl(浓)}$ 的玻璃杯，产生白烟则有 $\ce{NH4+}$
+  - 制备 $\ce{NH3}$ $\color{blue}{(2)}$
+    1. 用 $\ce{NH4Cl(s)}$ 与 $\ce{Ca(OH)2(s)}$ （目的：尽量减少反应体系中 $\ce{H2O}$，防止 $\ce{NH3}$ 溶解），加热（固-固加热装置）。
+        - 收集：向下排空气法
+        - 验满
+          1. 湿润的红色石蕊试纸
+          2. 蘸有浓盐酸的玻璃杯
+        - 尾气处理
+          ![装置](/home/.config/Typora/typora-user-images/image-20220324134411512.png)
+        - 装置：
+          - 要点：
+            1. 棉花：防止 $\ce{NH3}$ 与空气对流，提高其纯度）
+            2. 导管插到底
+            <img src="/home/.config/Typora/typora-user-images/image-20220318221303209.png" alt="装置" style="zoom: 50%;" />神奇装置f
+            ![装置](/home/.config/Typora/typora-user-images/image-20220324134216001.png)
+        - 现象：试管壁上出现水珠，用水将红色石蕊试纸润湿，将其放在试管口，看到试纸变蓝、闻到刺激性气味气体。
+    2. 浓氨水滴入 $\ce{CaO}$
+        -  $\ce{CaO + H2O -> Ca(OH)2 \color{magenta}{+ Q}}$ 消耗水，又放热，使 $\ce{NH3}$ 逸出
+
+- 受热易分解
+  - 简易鉴别 $\ce{NH4HCO3}$ $\color{blue}{(3)}$
+    - 所以 $\ce{NH4HCO3}$ 可做食品膨松剂
+  - 加热 $\ce{NH4Cl(s)}$ 实验
+    1. 现象：
+       - 试管底部白色固体明显减少（**吸热**反应） $\color{blue}{(4)}$
+       - 在试管中部有白色固体生成 $\color{blue}{(5)}$
+       - 是化学反应
+         - 如何证明呢？显然不是
+           - ![神奇装置](/home/.config/Typora/typora-user-images/image-20220324133027023.png)
+           - ![装置1 复刻](/home/.config/Typora/typora-user-images/image-20220324133938961.png)
+         - 是不是升华、凝华呢？显然不是
+    2. 同理，不能用于制备 $\ce{NH3}$
+       <img src="/home/.config/Typora/typora-user-images/image-20220319100723021.png" alt="装置" style="zoom:67%;" />
+  - $\ce{(NH4)2Cr2O7}$ 分解 $\color{blue}{(6)}$
+    1. 现象：引燃后，反应持续进行，橙红色晶体变暗，有带火星的颗粒喷出，生成固体体积远大于原体积。
+    2. 生成 $\ce{N2}$ 原因：$\ce{(\overset{-3}{N}H4)2\overset{+6}{Cr}_2O7 -> \overset{+3}{Cr}_2O3 \and \overset{0}{N}_2}$，可知 $\ce{NH4+}$ 与酸根离子能发生氧化还原反应时，就不生成 $\ce{NH3}$
+  - $\ce{NH4NO3 ->[\Delta=?] N2O \or N2 \or O2 \or H2O}$
+    - 造成过重大工业事故
+
+- 铵盐的保存
+  - 不能与碱性物质（如石灰、草木灰）混合使用（与碱反应）
+  - 低温密封、深施盖土（受热易分解）
+
+- 用途
+
+  - 氮肥
+    - 硝态氮肥
+    - $\rightarrow$ 铵态氮肥
+      - $\ce{NH3}$ 含氮量比尿素高，为什么不用 $\ce{NH3}$ 作氮肥？
+
+    - 有机氮肥
+      -  $\ce{(NH)2CO}$，含氮量最高、中性、肥效持久、易保存
+
+  - $\ce{NH4Cl}$ 作防火布 $\color{blue}{(4)}$
+    - $\ce{\color{magenta}{- Q}}$
+    - $\ce{^}$
+
+- 干燥
+
+  - 不能用无水 $\ce{CaCl2}$：$\ce{ CaCl2 + 8NH3 -> CaCl2 * 8NH3}$
+    $\ce{CaCl2 * 8NH3}$ 是络合物，常温下稳定，**受热分解**。
+  - 不能用 $\ce{H2SO4(浓), P2O5}$，因为是酸性的
+  - 不用硅胶（$\ce{SiO2 * nH2O}$）：其对 $\ce{NH3}$ 也有一定吸附性
+  - 用碱石灰
+
+---
+
+<img src="/home/.config/Typora/typora-user-images/image-20220319111402340.png" alt="P1" style="zoom: 70%;" />
+
+$\ce{NH4HCO3 + 2NaOH(足) = Na2CO3 + NH3 ^ + 2H2O}$
+$n(\ce{NH4HCO3}) = 0.5a$
+$$
+\left\{
+\begin{eqnarray}
+\ce{Na2CO3 + 2HCl = 2NaCl + CO2 ^ + H2O} \\
+\ce{NH4HCO3 + HCl = NH4Cl + H2O + CO2 ^}
+\end{eqnarray}
+\right.
+$$
+$2n(\ce{Na2CO3}) + n(\ce{NH4CO3}) = b$
+$n(\ce{Na2CO3}\ in\ 100\text{mL}) = \dfrac{b - 0.5a}{2}$
+$c(\ce{Na2CO3}) = 10(\dfrac{b - 0.5a}{2}) = 5b - 2.5a$  
+
+$c(\ce{Na+}) = 2n(\ce{Na2CO3}) = 10b - 5a$  
+
+## $\ce{HNO3}$ 的强氧化性（与 $\ce{\color{blue}{H2SO4}} 比较$）
+
+- 反应
+
+  1. 冷的 $\ce{HNO3(浓), \color{blue}{H2SO4(浓)}}$ 钝化 $\ce{Fe, Al}$，在金属表明形成一层**致密**的氧化膜，阻止金属内部继续反应。
+
+     $\implies$ 常温下，这两种酸可以用钢瓶储存
+     以 $\ce{Fe}$ 为例：
+
+     - $\ce{2Fe + 6HNO3(浓) -> Fe2O3 + 6NO2 + 3H2O}$
+
+       $\ce{3Fe + 8HNO3(稀) -> 3Fe(NO3)2 + 2NO ^ + 4H2O}$
+       
+       $\ce{Fe + 4HNO3(稀) -> Fe(NO3)3 + NO ^ + 2H2O}$
+       
+       $\ce{\color{blue}{2Fe + 3H2SO4(浓) -> Fe2O3 + 3SO2 + 3H2O}}$
+       （生成的气体溶解于溶液中）
+
+  2. 浓硝酸分解生成 $\ce{NO2}$，使溶液**变黄**：
+     $\ce{4HNO3(浓) ->[光照 \or \Delta] 4NO2 ^ + O2 ^ + 2H2O}$
+     常温下反应向左进行
+
+  3. $\implies$ 实验室中，要用棕色、细口、玻璃塞的玻璃瓶、于低温处保存
+  
+  4. 与非金属反应
+  
+     - $\ce{C + 4HNO3(浓) -> CO2 ^ + 4NO2 ^ + 2H2O}$
+       - 现象：反应迅速、生成红棕色气体（试管**内**）、溶液变为蓝色
+       - 离子方程式：$\ce{Cu + 4H+ + 2NO3- -> Cu^2+ + 2NO2 ^ + 2H2O}$
+       - $\color{blue}{\ce{H2SO4(浓)}}$ 以分子形式存在，没有离子方程式
+     - $\ce{3C + 4HNO3(稀) -> 3CO2 ^ + 4NO ^ + 2H2O}$
+       - 现象：反应缓慢、生成无色气体、与空气接触后生成红棕色气体（试管**口**）、溶液变为蓝色
+       - 离子方程式：$\ce{3Cu + 8H+ + 2NO3- -> 3Cu^2+ + 2NO ^ + 4H2O}$
+       - 用途：实验室制较少量 $\ce{NO}$
+     - $\ce{\color{blue}{C + 2H2SO4(浓) ->[\color{red}{\Delta}] CO2 ^ + 2SO2 ^ + 2H2O}}$
+     - $\ce{S + 2HNO3(稀) ->[\color{red}{\Delta}] H2SO4 + 2NO ^}$
+     - $\ce{S + 4HNO3(浓) ->[\color{red}{\Delta}] SO2 ^ + 4NO2 ^ + 2H2O}$
+     - $\ce{\color{blue}{S + 2H2SO4(浓) -> 3SO2 ^ + 2H2O}}$
+  
+  5. 与金属反应（$\ce{Au, Pt}$ 等除外）
+  
+     - 与 $\ce{Cu}$ 反应
+       - $\ce{Cu + 4HNO3(浓) -> Cu(NO3)2 + 2NO2 ^ + 2H2O}$
+       - $\ce{3Cu + 8HNO3(稀) -> 3Cu(NO3)2 + 2NO ^ + 4H2O}$
+       - $\ce{\color{blue}{Cu + 2H2SO4(浓) ->[\color{red}{\Delta}] CuSO4 + SO2 ^ + 2H2O}}$
+     - 与 $\ce{Mg}$ 反应 
+       - $\ce{Mg + 4HNO3(浓) -> Mg(NO3)2 + 2\overset{+4}{N}O2 ^ + 2H2O}$
+       - $\ce{3Mg + 8HNO3(稀) -> 3Mg(NO3)2 + 2\overset{+2}{N}O ^ + 4H2O}$
+       - $\ce{4Mg + 10HNO3(稀) -> 4Mg(NO3)2 + 2\overset{+1}{N}_2O ^ + 5H2O}$
+       - $\ce{5Mg + 12HNO3(很稀) -> 5Mg(NO3)2 + \overset{0}{N}_2 ^ + 6H2O}$
+       - $\ce{4Mg + 10HNO3(极稀) -> 4Mg(NO3)2 + \overset{-3}{N}H4NO3 + 3H2O}$（还原产物是 $\ce{\overset{-3}{N}H3}$，其会与 $\ce{HNO3}$ 进一步反应）
+       - $\ce{\color{blue}{2H2SO4(浓) + Mg -> MgSO4 + 2H2O + SO2 ^}}$
+       - $\ce{\color{blue}{H2SO4(稀) + Mg -> MgSO4 + H2 ^}}$
+  
+  6. 与某些化合物反应（$\ce{SO2, S^2-, Br-, I-, Fe^2+}$）
+
+
+-  总结
+
+   - $\ce{HNO3}$ 浓和稀都有**强**氧化性，而 $\ce{\color{blue}{H2SO4}}$ 只有浓的才有强氧化性
+   - 对于 $\ce{C, Cu}$ 等金属和非金属，$\ce{HNO3}$ 无论浓、稀都能在常温下反应；而 $\ce{\color{blue}{H2SO4(浓)}}$ 需加热才能反应
+   - $\ce{S}$ 的情况相反，应该是由于其与 $\ce{H2SO4}$ 都含有硫元素，较易反应
+   - $\ce{HNO3(浓)}$ 的还原产物多为 $\ce{NO2}$，$\ce{HNO3(稀)}$ 多为 $\ce{NO}$
+   - 从与 $\ce{Mg}$ 的反应可看出 $\ce{HNO3}$ 的还原产物实际是相当丰富的，这与氮元素的化合价数目有关
+     而且，极稀的浓度下，一般也不考虑生成 $\ce{H2}$；反之 $\ce{\color{blue}{H2SO4(浓)}}$ 反应变稀后，若还剩余 $\ce{Mg}$ 必定生成 $\ce{H2}$
+   - 氧化性比较：$\ce{HNO3(浓) > HNO3(稀) > \color{blue}{H2SO4(浓)}}$
+
+---
+
+$\ce{0.3mol NH4HCO3(s) + 0.1mol CaCO3(s) ->[\Delta = 120^\circ C]} ..., \Delta m = ?$
+
+$\ce{SO2 + 2NaOH = Na2SO3 + H2O}$
+$\ce{Na2SO3 + SO2 + H2O = 2NaHSO3}$
+
+$\ce{SO2 + NaOH = NaHSO3}$
+$\ce{NaHSO3 + NaOH = Na2SO3 + H2O}$
