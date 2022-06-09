@@ -1,0 +1,18 @@
+- id: log-chemistry-1
+  name: '化学笔记 1'
+- id: log-chemistry-2
+  name: '化学笔记 2'
+- id: log-chemistry-3
+  name: '化学笔记 3'
+- id: log-chemistry-4
+  name: '化学笔记 4'
+- id: log-chemistry-5
+  name: '化学笔记 5'
+- id: log-chemistry-tutor
+  name: '化学笔记导师制'
+- id: log-daily-1-simple-sandbox-in-javascript
+  name: '日志 1 JS 实现简单沙箱'
+- id: log-daily-2-use-obs-studio-on-archlinux
+  name: '日志 2 在 archlinux 上使用 OBS 虚拟摄像头'
+- id: log-daily-3-file-system-learning-1
+  name: '日志 3 文件系统学习 1'
