@@ -40,8 +40,8 @@ _lost+found_
   - $\ce{N#N}$
 - 反应
 
-  1. $\ce{N2 + O2 ->[放电 \or 高温] 2NO}$ 还原性
-  2. $\ce{N2 + 3H2 <=>[\text{cat.}][高温 \and 高压] 2NH3}$ 氧化性
+  1. $\ce{N2 + O2 ->[放电 \lor 高温] 2NO}$ 还原性
+  2. $\ce{N2 + 3H2 <=>[\text{cat.}][高温 \land 高压] 2NH3}$ 氧化性
   3. $\ce{N2 + 3Mg ->[点燃] Mg3N2}$ 氧化性
   4. $\ce{N2 + 6H+ + 6e- ->[根瘤菌固氮酶] 2NH3}$ （半反应）氧化性
   5. $\ce{2NO + O2 -> 2NO2}$
@@ -50,21 +50,21 @@ _lost+found_
   - 游离态的 $\ce{N2}$ 很难被植物吸收
   - 氮的固定：游离态 $\ce{->}$ 化合态
   - 方法
-    1. 天然·大气固氮：$\ce{N2 + O2 ->[放电 \or 高温] 2NO}\color{blue}{(1)}$
+    1. 天然·大气固氮：$\ce{N2 + O2 ->[放电 \lor 高温] 2NO}\color{blue}{(1)}$
        - $\ce{N2 ->[放电] NO ->[O2] NO2 ->[H2O] HNO3}$ （硝态氮肥）
     2. 天然·生物固氮：$\ce{N2 + 6H+ + 6e- ->[根瘤菌固氮酶] 2NH3 }\color{blue}{(4)}$ 
-    3. 人工固氮：$\ce{N2 + 3H2 ->[\text{cat.}][高温 \and 高压] 2NH3}\color{blue}{(2)}$ （铵态氮肥）
+    3. 人工固氮：$\ce{N2 + 3H2 ->[\text{cat.}][高温 \land 高压] 2NH3}\color{blue}{(2)}$ （铵态氮肥）
 
 ## $\ce{N_xO_y}$
 
-|                                         | 色态味             | 溶解性       | 毒性         | 酸酐                             | 氧化物               | 用途、危害           |
-| --------------------------------------- | ------------------ | ------------ | ------------ | -------------------------------- | -------------------- | -------------------- |
-| $\ce{\overset{+1}{N}_2O}$               | 无色气体           |              |              | -                                |                      | 麻醉剂，笑气         |
-| $\ce{\overset{+2}{N}O}$                 | 无色气体           | 难           | 有毒         | -                                | 不成盐               | 与血红蛋白结合，中毒 |
-| $\ce{\overset{+3}{N}_2O3}$              |                    |              |              | $\ce{H\overset{+3}{N}O2}$ 的酸酐 | 酸性                 |                      |
-| $\ce{\overset{+4}{N}O2}$                | 红棕色，刺激性气体 | 易           | 有毒         | 混酐                             | ~~酸性~~（价态改变） | 酸雨，光化学烟雾     |
-| $\ce{\overset{\color{red}{+4}}{N}_2O4}$ |                    |              |              | -                                |                      |                      |
-| $\ce{\overset{+5}{N}_2O5}$              | 无色晶体           | + HN+ HNO3O3 | + HNO3+ HNO3 | $\ce{H\overset{+5}{N}O3}$ 的酸酐 | 酸性                 |                      |
+|                                         | 色态味             | 溶解性 | 毒性 | 酸酐                             | 氧化物               | 用途、危害           |
+| --------------------------------------- | ------------------ | ------ | ---- | -------------------------------- | -------------------- | -------------------- |
+| $\ce{\overset{+1}{N}_2O}$               | 无色气体           |        |      | -                                |                      | 麻醉剂，笑气         |
+| $\ce{\overset{+2}{N}O}$                 | 无色气体           | 难     | 有毒 | -                                | 不成盐               | 与血红蛋白结合，中毒 |
+| $\ce{\overset{+3}{N}_2O3}$              |                    |        |      | $\ce{H\overset{+3}{N}O2}$ 的酸酐 | 酸性                 |                      |
+| $\ce{\overset{+4}{N}O2}$                | 红棕色，刺激性气体 | 易     | 有毒 | 混酐                             | ~~酸性~~（价态改变） | 酸雨，光化学烟雾     |
+| $\ce{\overset{\color{red}{+4}}{N}_2O4}$ |                    |        |      | -                                |                      |                      |
+| $\ce{\overset{+5}{N}_2O5}$              | 无色晶体           |        |      | $\ce{H\overset{+5}{N}O3}$ 的酸酐 | 酸性                 |                      |
 
 - 反应
 
@@ -109,7 +109,7 @@ _lost+found_
 - 反应
 
   - 氨的催化氧化
-    - $\ce{4NH3 + 5O2 ->[\text{cat.} (Cr2O3 \or\ Pt)][\Delta] 4NO + 6H2O \color{magenta}{+ Q}}$
+    - $\ce{4NH3 + 5O2 ->[\text{cat.} (Cr2O3 \lor\ Pt)][\Delta] 4NO + 6H2O \color{magenta}{+ Q}}$
   - 氨选择性催化处理 $\ce{NO, NO2}$
     - $\ce{4NO + 4NH3 + O2 ->[\text{cat.}, \Delta=140^\circ C] 4N2 + 6H2O}$
     - $\ce{6NO2 + 8NH3 ->[\text{cat.}, \Delta=140^\circ C] 7N2 + 12 H2O}$
@@ -242,8 +242,8 @@ _lost+found_
        <img src="/home/.config/Typora/typora-user-images/image-20220319100723021.png" alt="装置" style="zoom:67%;" />
   - $\ce{(NH4)2Cr2O7}$ 分解 $\color{blue}{(6)}$
     1. 现象：引燃后，反应持续进行，橙红色晶体变暗，有带火星的颗粒喷出，生成固体体积远大于原体积。
-    2. 生成 $\ce{N2}$ 原因：$\ce{(\overset{-3}{N}H4)2\overset{+6}{Cr}_2O7 -> \overset{+3}{Cr}_2O3 \and \overset{0}{N}_2}$，可知 $\ce{NH4+}$ 与酸根离子能发生氧化还原反应时，就不生成 $\ce{NH3}$
-  - $\ce{NH4NO3 ->[\Delta=?] N2O \or N2 \or O2 \or H2O}$
+    2. 生成 $\ce{N2}$ 原因：$\ce{(\overset{-3}{N}H4)2\overset{+6}{Cr}_2O7 -> \overset{+3}{Cr}_2O3 \land \overset{0}{N}_2}$，可知 $\ce{NH4+}$ 与酸根离子能发生氧化还原反应时，就不生成 $\ce{NH3}$
+  - $\ce{NH4NO3 ->[\Delta=?] N2O \lor N2 \lor O2 \lor H2O}$
     - 造成过重大工业事故
 
 - 铵盐的保存
@@ -280,10 +280,10 @@ $\ce{NH4HCO3 + 2NaOH(足) = Na2CO3 + NH3 ^ + 2H2O}$
 $n(\ce{NH4HCO3}) = 0.5a$
 $$
 \left\{
-\begin{eqnarray}
+\begin{align}
 \ce{Na2CO3 + 2HCl = 2NaCl + CO2 ^ + H2O} \\
 \ce{NH4HCO3 + HCl = NH4Cl + H2O + CO2 ^}
-\end{eqnarray}
+\end{align}
 \right.
 $$
 $2n(\ce{Na2CO3}) + n(\ce{NH4CO3}) = b$
@@ -311,7 +311,7 @@ $c(\ce{Na+}) = 2n(\ce{Na2CO3}) = 10b - 5a$
        （生成的气体溶解于溶液中）
 
   2. 浓硝酸分解生成 $\ce{NO2}$，使溶液**变黄**：
-     $\ce{4HNO3(浓) ->[光照 \or \Delta] 4NO2 ^ + O2 ^ + 2H2O}$
+     $\ce{4HNO3(浓) ->[光照 \lor \Delta] 4NO2 ^ + O2 ^ + 2H2O}$
      常温下反应向左进行
 
   3. $\implies$ 实验室中，要用棕色、细口、玻璃塞的玻璃瓶、于低温处保存
