@@ -16,3 +16,5 @@
   name: '日志 2 在 archlinux 上使用 OBS 虚拟摄像头'
 - id: log-daily-3-file-system-learning-1
   name: '日志 3 文件系统学习 1'
+- id: log-daily-4-render-markdown-and-latex
+  name: '日志 4 渲染 Markdown 和 LaTeX'

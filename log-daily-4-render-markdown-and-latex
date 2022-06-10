@@ -1,0 +1,101 @@
+## Markdown
+
+采用 [Marked.js](https://github.com/markedjs/marked) 包. 基本无需配置.
+
+主站资源文件在 [FkLog](https://github.com/ForkKILLET/FkLog)，所以图片需要配置一下路径：
+
+```typescript
+marked(markdown, {
+    baseUrl: './FkLog/'
+})
+```
+
+由于 Marked.js 的路径合并机制，`baseUrl` 需要以 `/` 结尾
+
+## $\LaTeX$
+
+> 不要使用 MathJax！
+
+使用 [KaTeX](https://katex.org/) 渲染，确实很快.
+
+最重要的部分是如何将 $\LaTeX$ 嵌入 Markdown. 如果先渲染 Markdown 再将指定元素传入 KaTeX 渲染会出现一些冲突：行间公式中 `\\` 会被识别为 Markdown 中转义斜杠；`_` 有时被识别为斜体等等.
+
+考虑扩展 Marked.js，在解析过程中利用 `katex.renderToString` 方法直接渲染.
+
+参考：
+
+- Marked.js 文档：<https://marked.js.org/using_pro>
+- 社区扩展 marked-extended-latex：<https://github.com/sxyazi/marked-extended-latex/>（但是 JavaScript 的，我基本是在这个扩展基础上完成 TypeScript 版本）
+- 引入 $\LaTeX$ 包 mhchem（化学笔记用）：<https://mhchem.github.io/MathJax-mhchem/>
+
+代码如下：
+
+```typescript
+import katex from 'katex'
+import 'katex/contrib/mhchem'
+import 'katex/dist/katex.min.css'
+
+type mathBlockToken = {
+    type: 'math-block',
+    raw: string,
+    formula: string
+}
+
+export const mathBlockExt = {
+    name: 'math-block',
+    level: 'block' as const,
+    start(src: string) {
+        return src.match(/\${2}(?!\$)/)?.index ?? -1
+    },
+    tokenizer(src: string) {
+        const match = src.match(/^\${2}([^\$]+?)\${2}/)
+        return match ? {
+            type: 'math-block',
+            raw: match[0],
+            formula: match[1]
+        } : undefined
+    },
+    renderer(token: mathBlockToken) {
+        return '<span>' + katex.renderToString(token.formula, { displayMode: true }) + '</span>'
+    }
+}
+
+type mathInlineToken = {
+    type: 'math-inline',
+    raw: string,
+    formula: string
+}
+
+export const mathInlineExt = {
+    name: 'math-inline',
+    level: 'inline' as const,
+    start(src: string) {
+        return src.match(/\$(?!\$)/)?.index ?? -1
+    },
+    tokenizer(src: string) {
+        const match = src.match(/^\$([^\$\n]+?)\$/)
+        return match ? {
+            type: 'math-inline',
+            raw: match[0],
+            formula: match[1]
+        } : undefined
+    },
+    renderer(token: mathInlineToken) {
+        return '<span>' + katex.renderToString(token.formula) + '</span>'
+    }
+}
+
+export default {
+    extensions: [ mathBlockExt, mathInlineExt ]
+}
+```
+
+需要注意的地方：
+
+- `L2`：mhchem 包以副作用形式引入
+- `L3`：记得引入 CSS，否则 KaTeX 生成的 `<mathml>` 标签也会显示
+- `L13, L38`：这两处 `level ` 需要 `as const`，否则类型不兼容
+- `L15, L40`：Marked.js 文档中并无 `?? -1`，但是 TypeScript 中此处类型标注为 `number`，必须返回数字 
+- `L26`：行间公式只需向 `katex,renderToString` 传入 `{ displayMode: true }` 选项
+
+## 完结撒花
