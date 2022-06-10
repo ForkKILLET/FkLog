@@ -2,13 +2,13 @@
 
 
 
-![p68 13.1 2](/home/.config/Typora/typora-user-images/image-20220319190547216.png)
+![p68 13.1 2](@images/image-20220319190547216.png)
 
 $\ce{2H2S + O2 ->[点燃] 2S + 2H2O}$
 
 $\ce{S + O2 ->[点燃] SO2 ^}$
 
-![p68 13.1 3](/home/.config/Typora/typora-user-images/image-20220319190945437.png)
+![p68 13.1 3](@images/image-20220319190945437.png)
 
 $\ce{H2S(g) <-> H2S(aq)}$
 
@@ -46,10 +46,10 @@ $\ce{SO2 + 2Fe^3+ \color{blue}{+ 2H2O} -> SO4^2- + 2Fe^2+ \color{blue}{+ 4H+}}$
 
 - $v_正 = v_逆 \implies c (=)$
 
-![](/home/.config/Typora/typora-user-images/image-20220319192303002.png)
+![](@images/image-20220319192303002.png)
 
 - 平衡常数 （见下）
-- ![](/home/.config/Typora/typora-user-images/image-20220319200206751.png)
+- ![](@images/image-20220319200206751.png)
   $\ce{Na2SO3 ->[HCl] Na2SO3 + NaHSO3 + NaCl + H2SO3 ->[HCl] NaHSO3 + NaCl + H2SO3 ->[HCl] NaCl + H2SO3}$
 
 只有 $\ce{Na2SO3}$  碱性，所以必然是 $\ce{Na2SO3, NaHSO3, NaCl}$ 的状态。
@@ -62,7 +62,7 @@ $\ce{SO2 + 2Fe^3+ \color{blue}{+ 2H2O} -> SO4^2- + 2Fe^2+ \color{blue}{+ 4H+}}$
 
 以 $\ce{Na2CO3}$ 为例
 
-![](/home/.config/Typora/typora-user-images/image-20220319192721417.png)
+![](@images/image-20220319192721417.png)
 
 1. 第一步水解（弱的离子才会水解）：$\ce{SO3^2- + H2O <=> HSO3- + OH-}$
 2. 第二步水解：$\ce{HSO3- + H2O <=> H2SO3 + OH-}$

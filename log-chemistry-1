@@ -146,7 +146,7 @@ _lost+found_
 
 - 喷泉实验
   - 装置
-    ![装置](/home/.config/Typora/typora-user-images/image-20220321133229206.png)
+    ![装置](@images/image-20220321133229206.png)
     烧瓶要干燥，气密性要好，氨气纯度要高
     
   - 操作：挤压胶头滴管，打开止水夹
@@ -191,7 +191,7 @@ _lost+found_
   - 能电离出 $\ce{NH4+}$（正四面体结构）
 
   -  电子式
-    ![电子式](/home/.config/Typora/typora-user-images/image-20220318215733292.png)
+    ![电子式](@images/image-20220318215733292.png)
     
     一个是配位键
 
@@ -215,13 +215,13 @@ _lost+found_
           1. 湿润的红色石蕊试纸
           2. 蘸有浓盐酸的玻璃杯
         - 尾气处理
-          ![装置](/home/.config/Typora/typora-user-images/image-20220324134411512.png)
+          ![装置](@images/image-20220324134411512.png)
         - 装置：
           - 要点：
             1. 棉花：防止 $\ce{NH3}$ 与空气对流，提高其纯度）
             2. 导管插到底
-            <img src="/home/.config/Typora/typora-user-images/image-20220318221303209.png" alt="装置" style="zoom: 50%;" />神奇装置f
-            ![装置](/home/.config/Typora/typora-user-images/image-20220324134216001.png)
+            ![装置](@images/image-20220318221303209.png)
+            ![装置](@images/image-20220324134216001.png)
         - 现象：试管壁上出现水珠，用水将红色石蕊试纸润湿，将其放在试管口，看到试纸变蓝、闻到刺激性气味气体。
     2. 浓氨水滴入 $\ce{CaO}$
         -  $\ce{CaO + H2O -> Ca(OH)2 \color{magenta}{+ Q}}$ 消耗水，又放热，使 $\ce{NH3}$ 逸出
@@ -235,11 +235,11 @@ _lost+found_
        - 在试管中部有白色固体生成 $\color{blue}{(5)}$
        - 是化学反应
          - 如何证明呢？显然不是
-           - ![神奇装置](/home/.config/Typora/typora-user-images/image-20220324133027023.png)
-           - ![装置1 复刻](/home/.config/Typora/typora-user-images/image-20220324133938961.png)
+           - ![神奇装置](@images/image-20220324133027023.png)
+           - ![装置1 复刻](@images/image-20220324133938961-16548302883092.png)
          - 是不是升华、凝华呢？显然不是
     2. 同理，不能用于制备 $\ce{NH3}$
-       <img src="/home/.config/Typora/typora-user-images/image-20220319100723021.png" alt="装置" style="zoom:67%;" />
+       ![装置](@images/image-20220319100723021.png)
   - $\ce{(NH4)2Cr2O7}$ 分解 $\color{blue}{(6)}$
     1. 现象：引燃后，反应持续进行，橙红色晶体变暗，有带火星的颗粒喷出，生成固体体积远大于原体积。
     2. 生成 $\ce{N2}$ 原因：$\ce{(\overset{-3}{N}H4)2\overset{+6}{Cr}_2O7 -> \overset{+3}{Cr}_2O3 \land \overset{0}{N}_2}$，可知 $\ce{NH4+}$ 与酸根离子能发生氧化还原反应时，就不生成 $\ce{NH3}$
@@ -274,7 +274,7 @@ _lost+found_
 
 ---
 
-<img src="/home/.config/Typora/typora-user-images/image-20220319111402340.png" alt="P1" style="zoom: 70%;" />
+
 
 $\ce{NH4HCO3 + 2NaOH(足) = Na2CO3 + NH3 ^ + 2H2O}$
 $n(\ce{NH4HCO3}) = 0.5a$
