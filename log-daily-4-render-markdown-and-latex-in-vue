@@ -1,8 +1,15 @@
 ## Markdown
 
-采用 [Marked.js](https://github.com/markedjs/marked) 包. 基本无需配置.
+采用 [Marked.js](https://github.com/markedjs/marked).
 
-主站资源文件在 [FkLog](https://github.com/ForkKILLET/FkLog)，所以图片需要配置一下路径：
+安装：
+
+```bash
+yarn add marked
+yarn add @types/marked
+```
+
+本站资源文件在 [FkLog](https://github.com/ForkKILLET/FkLog)，所以图片需要配置一下路径：
 
 ```typescript
 marked(markdown, {
@@ -11,6 +18,68 @@ marked(markdown, {
 ```
 
 由于 Marked.js 的路径合并机制，`baseUrl` 需要以 `/` 结尾
+
+## 代码高亮
+
+采用 [Prism.js](https://prismjs.com/).
+
+Vite & Vue 中要使用 Prism，需要安装 `prismjs` 包和  `vite-plugin-prismjs` 插件：
+
+```bash
+yarn add prismjs
+yarn add vite-plugin-prismjs -D
+```
+
+在 `vite.config.ts` 中配置 Prism.js：
+
+```typescript
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import prismjs from 'vite-plugin-prismjs'
+
+export default defineConfig({
+  plugins: [
+    vue(),
+    prismjs({
+      languages: [ 'javascript', 'typescript', 'bash' ], // 需要的语言
+      theme: 'okaidia', // 主题
+      css: true
+    })
+  ]
+})
+```
+
+随后，接入 Marked.js：
+
+```ts
+import Prism from 'prismjs'
+
+marked(markdown, {
+    // ...
+    highlight: (code, lang) => (
+        Prism.highlight(code, Prism.languages[lang], lang)
+    )
+})
+```
+
+关于行号：
+
+Prism.js 有 line-numbers 插件，但是基于 DOM 操作的，为了和本站 $\LaTeX$ 等渲染方式保持一致~~（懒）~~，手动造了一个行号轮子：
+
+```typescript
+highlight: (code, lang) => (
+    Prism.highlight(code, Prism.languages[lang], lang)
+        .split('\n')
+        .map((ln, i, lines, n = lines.length.toString().length) =>
+             `<span class="line-number">${
+                 ' '.repeat(n - (i + 1).toString().length)
+             }${i + 1}. </span>${ln}`
+        )
+        .join('\n')
+)
+```
+
+随后为 `<pre>` 标签加上黑色背景就能很好地显示了.
 
 ## $\LaTeX$
 
