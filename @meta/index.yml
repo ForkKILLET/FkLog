@@ -8,6 +8,8 @@
   name: '化学笔记 4'
 - id: log-chemistry-5
   name: '化学笔记 5'
+- id: log-physics
+  name: '物理笔记'
 - id: log-chemistry-tutor
   name: '化学笔记导师制'
 - id: log-daily-1-simple-sandbox-in-javascript
