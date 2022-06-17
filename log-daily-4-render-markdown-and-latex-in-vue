@@ -167,4 +167,43 @@ export default {
 - `L15, L40`：Marked.js 文档中并无 `?? -1`，但是 TypeScript 中此处类型标注为 `number`，必须返回数字 
 - `L26`：行间公式只需向 `katex,renderToString` 传入 `{ displayMode: true }` 选项
 
+## Emojis
+
+同样编写一个 Marked.js 扩展（需要用到 node-emoji 包解析 emoji 文本）：
+
+```typescript
+import emoji from 'node-emoji'
+
+Object.assign(window, emoji)
+
+type EmojiToken = {
+    type: 'emoji',
+    raw: string,
+    name: string
+}
+
+export const emojiExt = {
+    name: 'emoji',
+    level: 'inline' as const,
+    start(src: string) {
+        return src.match(/:[a-z\d\-_]+:/)?.index ?? -1
+    },
+    tokenizer(src: string): EmojiToken | void {
+        const match = src.match(/^:([a-z\d\-_]+):/)
+        return match ? {
+            type: 'emoji',
+            raw: match[0],
+            name: match[1]
+        } : undefined
+    },
+    renderer(token: EmojiToken) {
+        return emoji.emojify(token.raw)
+    }
+}
+
+export default {
+    extensions: [ emojiExt ]
+}
+```
+
 ## 完结撒花
