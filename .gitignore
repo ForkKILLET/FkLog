@@ -3,6 +3,7 @@ log-*
 !log-chemistry-*
 !log-physics
 !log-daily-*
+!log-sheep-book-*
 
 *.pdf
 *.zip
