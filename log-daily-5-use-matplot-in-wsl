@@ -1,0 +1,11 @@
+_draft_
+
+
+
+`/etc/apt/apt.conf.d/100zsh-rehash`:
+
+```plain
+DPkg::Post-Invoke {"killall --signal USR1 zsh"; };
+```
+
+x11 in wsl: VcXsrv
