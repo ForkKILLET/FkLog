@@ -20,7 +20,7 @@ def plot(title):
             )
 
             args = parser.parse_args()
-
+            plt.rcParams['font.sans-serif'] = ['simhei']
             func(plt=plt, np=np)
             plt.title(title)
 
