@@ -20,7 +20,9 @@ class Balance():
         ax.plot(0, 1, '^k', transform=ax.get_xaxis_transform(), clip_on=False)
 
         plt.legend(loc='upper right')
+
         plt.xticks(self.xticks, self.xtick_labels)
+        plt.yticks([0])
 
         return True
 
