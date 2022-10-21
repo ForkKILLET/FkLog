@@ -312,6 +312,9 @@
     | 减小反应物浓度 | 逆方向   | $\downarrow$ | $-$          |
     | 增大生成物浓度 | 逆方向   | $-$          | $\uparrow$   |
 
+  - 图像  
+    ![balance-2](@images/plot-balance-2.svg)
+
 - 温度
 
   - | 操作     | 移动方向 |  $v_正$    | $v_逆$ |
