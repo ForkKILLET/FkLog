@@ -1,6 +1,6 @@
 #!/bin/sh
 
 echo Generating plots
-for f in @matplot/plot-*; do
-	python3 $f --save --outdir ./@images
+for f in ~/log/@matplot/plot-*; do
+	python3 $f --save --outdir ~/log/@images
 done

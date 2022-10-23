@@ -3,7 +3,7 @@
 from gen import plot
 from balancebase import Balance
 
-@plot(title='balance-1')
+@plot(id='balance-1', title='balance base')
 def main(plt, np):
     with Balance(plt, np) as bal:
         bal.plot('1', label=True)

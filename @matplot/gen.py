@@ -3,7 +3,7 @@ from os import path
 import numpy as np
 import matplotlib.pyplot as plt
 
-def plot(title):
+def plot(id, title):
     def decorator(func):
         def wrapper():
             parser = argparse.ArgumentParser(
@@ -21,10 +21,12 @@ def plot(title):
 
             args = parser.parse_args()
             func(plt=plt, np=np)
-            plt.title(title)
+
+            plt.suptitle(title)
+            plt.tight_layout()
 
             if args.save:
-                file=path.join(args.outdir, f'plot-{title}.svg')
+                file=path.join(args.outdir, f'plot-{id}.svg')
                 print(f'Saving figure to {file}')
                 plt.savefig(file)
             else:
