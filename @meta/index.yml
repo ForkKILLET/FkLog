@@ -8,6 +8,8 @@
   name: '化学笔记 4'
 - id: log-chemistry-5
   name: '化学笔记 5'
+- id: log-chemistry-6
+  name: '化学笔记 6'
 - id: log-physics
   name: '物理笔记'
 - id: log-chemistry-tutor
