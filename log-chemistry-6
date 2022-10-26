@@ -67,7 +67,7 @@
 - 空间构型
 
   - 正四面体
-    - $\implies$ 键角 $\ang HCH = \pi - \arccos \frac{1}{3} \approx 109^\circ 28'$
+    - $\implies$ 键角 $\angle HCH = \pi - \arccos \frac{1}{3} \approx 109^\circ 28'$
     - 证明：二氯甲烷只有一种结构 $\Longleftarrow$ 二氯甲烷的**熔沸点固定**
   - 空间结构示意图
   - 球棍模型
@@ -127,7 +127,7 @@
 - 省略碳链上的 $\ce{C, H}$ 原子
 
 - 写成折线状
-  - $\Longleftarrow$ $\ang CCC < \pi$
+  - $\Longleftarrow$ $\angle CCC < \pi$
   - 折线的端点和拐点代表 $\ce{C}$ 原子
 
 
