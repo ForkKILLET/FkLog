@@ -22,5 +22,7 @@
   name: '日志 3 文件系统学习 1'
 - id: log-daily-4-render-markdown-and-latex-in-vue
   name: '日志 4 Vue 中渲染 Markdown 和 LaTeX'
+- id: log-daily-6-gitalk-but-inwallnet
+  name: '日志 6 Gitalk，但在因瓦网'
 - id: log-sheep-book-chapter-1
-  name: '隔壁老飏的小说（名字待定） 卷 1'
+  name: '隔壁老飏的小说（名字待定）卷 1'
