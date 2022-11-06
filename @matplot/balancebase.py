@@ -53,6 +53,7 @@ class Balance():
         plt.plot(move_x, forward_y, color='red', label=label and '$v_{forward}$')
         plt.plot(move_x, backward_y, color='blue', label=label and '$v_{backward}$')
         plt.plot(balance_x, balance_y, color='purple', label=label and '$v_{balance}$')
+
         plt.axvline(t1, dashes=(1, 1), color='black')
 
         self.xticks.append(t1)

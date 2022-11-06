@@ -26,9 +26,11 @@
 
   - $能量-反应进程$ 图
 
-    - $\ce{H2 + Cl2 ->[点燃] 2HCl}$ 放热的图（WIP）
+    - $\ce{H2 + Cl2 ->[点燃] 2HCl}$ 放热的图  
+      ![](@images/plot-reaction-energy-1.svg)
 
-    - $\ce{2H2O ->[通电] 2H2 ^ + O2 ^}$ 吸热的图（WIP）
+    - $\ce{2H2O ->[通电] 2H2 ^ + O2 ^}$  
+      ![](@images/plot-reaction-energy-2.svg)
 
     - $$
       E_{反应物} > E_{生成物} \implies 吸热反应 \\
