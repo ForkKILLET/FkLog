@@ -10,6 +10,10 @@
   name: '化学笔记 5'
 - id: log-chemistry-6
   name: '化学笔记 6'
+- id: log-chemistry-7
+  name: '化学笔记 7'
+- id: log-chemistry-8
+  name: '化学笔记 8'
 - id: log-physics
   name: '物理笔记'
 - id: log-chemistry-tutor
