@@ -165,7 +165,7 @@ export default {
 - `L3`：记得引入 CSS，否则 KaTeX 生成的 `<mathml>` 标签也会显示
 - `L13, L38`：这两处 `level ` 需要 `as const`，否则类型不兼容
 - `L15, L40`：Marked.js 文档中并无 `?? -1`，但是 TypeScript 中此处类型标注为 `number`，必须返回数字 
-- `L26`：行间公式只需向 `katex,renderToString` 传入 `{ displayMode: true }` 选项
+- `L26`：行间公式只需向 `katex.renderToString` 传入 `{ displayMode: true }` 选项
 
 ## Emojis
 
