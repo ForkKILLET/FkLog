@@ -1,0 +1,57 @@
+## 交变电流
+
+- 正弦式交变电流的电压
+
+  - 由动生电动势的定义推导：  
+    $$
+    \begin{aligned}
+    E_1 = E_2 &= nBlv_{\perp} = Blv \sin \omega t = Bl \omega \frac{m}{2} \sin \omega t \\
+    E &= E_1 + E_2 = nBS \omega \sin \omega t
+    \end{aligned}
+    $$
+    
+  - 利用磁通量的瞬时变化率既倒数：  
+    $$
+    \begin{aligned}
+    \Phi &= B \Delta S = BS \cos \theta = BS \cos \omega t\\
+    E &= \lim_{\Delta t \to 0} n \left| \dfrac{\Delta \Phi}{\Delta t} \right| = n |\Phi'(t)| = nBS \omega \sin \omega t
+    \end{aligned}
+    $$
+  
+  - 由正弦函数的性质可知电压在水平面取最大值 $E_{\max} = nBS \omega$ ；在中性面取最小值 $E_{min} = 0$
+  
+- 有效电压
+
+  - 定义：（等效替代法）与某交变电流在一定条件下放出焦耳热相同的直流电流的电压
+
+  - 推导有效电压  $U$：
+    $$
+    \begin{aligned}
+    Q &= \dfrac{U^2}{R}t = \int_0^t \dfrac{E(t)^2}{R}dt \\
+    U^2t &= \int_0^t E(t)^2 dt
+    \end{aligned}
+    $$
+  
+  - 则可以推导正弦式交变电流（$E = sin \omega t$）的有效电压，考虑时间在 $t \in [0, \pi] \text{s}$ 的情况：  
+    $$
+    \begin{aligned}
+    \int \sin^2t\ dt
+    &= \int \dfrac{1 - \cos 2t}{2}dt \\
+    &= \int \frac{1}{2}dt - \frac{1}{2} \int \cos 2t\ dt \\
+    &= \frac{1}{2}t - \frac{1}{2} \cdot \frac{1}{2} \sin 2t + C \\
+    &= \frac{1}{2}t - \frac{1}{4} \sin 2t + C \\
+    U^2t &= \int_0^\pi (E_{\max}\sin t)^2\ dt \\
+    &= E_{\max}^2 \cdot \left[ (\frac{1}{2} \pi - 0) - (0 - 0) \right] \\
+    &= \frac{\pi}{2} E_{\max}^2
+    \end{aligned}
+    $$
+  
+  - 在正弦函数的每个半周期，$U^2 = \frac{\pi}{2}E_{\max}^2$ 都成立，因为电压符号仅影响电流方向，与产生的焦耳热无关
+
+  - 那么对于任意时间 $t = k \pi (k \in \Z^+)$，都有：  
+    $$
+    \begin{aligned}
+    U^2t &= \frac{\pi}{2}E_{\max}^2 \cdot \frac{t}{\pi} = \frac{1}{2}tE_{\max}^2 \\
+    U &= \frac{\sqrt{2}}{2}E_{\max}
+    \end{aligned}
+    $$
