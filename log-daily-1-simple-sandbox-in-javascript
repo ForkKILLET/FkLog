@@ -147,7 +147,7 @@ box(`((() => {}).__proto__.constructor)("alert(\\"XSS\\")")()`) // 完蛋
 
 只好把它删掉了：（`delete` 是不行的）
 
-```
+```js
 Function.prototype.constructor = null
 ```
 
