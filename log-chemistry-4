@@ -47,10 +47,10 @@
 
   - $$
     \left\{
-    \begin{align}
+    \begin{aligned}
     \ce{Na2CO3 + HCl &-> NaCl + NaHCO3} \\
     \ce{NaHCO3 + HCl &-> 2NaCl + CO2 ^ + H2O}
-    \end{align}
+    \end{aligned}
     \right.
     
     \implies \ce{Na2Co3 + 2HCl -> 2NaCl + CO2 ^ + H2O}
@@ -128,10 +128,10 @@
 
         - $$
           \left\{
-          \begin{align}
+          \begin{aligned}
           \ce{2Fe3+ + Cu &-> 2Fe^2+ + Cu^2+} \\
           \ce{Cu^2+ + Fe &-> Fe^2+ + Cu}
-          \end{align}
+          \end{aligned}
           \right.
           $$
 

@@ -160,10 +160,10 @@
       - $\ce{HCl + NaOH -> NaCl + H2O}$
       - $$
         \left\{
-        \begin{align}
+        \begin{aligned}
         \ce{CH3Cl + H2O &->[NaOH] CH3OH + HCl} \\
         \ce{HCl + NaOH &-> NaCl + H2O}
-        \end{align}
+        \end{aligned}
         \right. \\
         \implies \ce{CH3Cl + NaOH -> CH3OH + NaCl}
         $$
