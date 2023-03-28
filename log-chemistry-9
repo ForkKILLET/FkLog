@@ -40,7 +40,7 @@
         - 单位：$\text{kJ} \cdot \text{mol}^{-1} \cdot \text{K}^{-1}$
     - 通过**温度传感器**可以测得温度的变化量 $\Delta T$（因为是变化量，所以测得 $^\circ \text{C}$ 与 $\text{K}$ 是一样的）
     - 由比热容的定义可计算出 $Q = cm \Delta T$
-  - 常见放热、吸热反应见[化学笔记 5](#/log/log-chemistry-5)
+  - 常见放热、吸热反应见[化学笔记 5](#/log/log-chemistry-5?anchor=常见反应)
 - 焓 $H$
   - 定义：“一个与内能 $U$ 有关的量”
     - 实际上 $H = U + pV$，即焓为一定物质的内能与其压力势能之和
