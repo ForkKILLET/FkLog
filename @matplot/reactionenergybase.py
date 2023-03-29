@@ -79,9 +79,40 @@ class ReactionEnergy():
             width=0.3, fc='grey', ec='grey', length_includes_head=True
         )
 
+        e_min = min(e1, e2)
+        e_max = max(e1, e2)
+        e_mid = (e1 + e2) / 2
+        e_mia = (e1 + ea) / 2
+
+        hy = [ ea ]
+        hxmin = [ 0 ]
+        hxmax = [ ta ]
+        if e1 < e2:
+            hy += [ e2, e2, e1 ]
+            hxmin += [ 0, ta + 0.5, t1 ]
+            hxmax += [ ta - 0.5, t2, t2 ]
+        else:
+            hy += [ e1, e2 ]
+            hxmin += [ t1, 0 ]
+            hxmax += [ t2, t2 ]
+
         plt.hlines(
-            y=[ ea, e2 ], xmin=[ 0, 0 ], xmax=[ ta, t2 ],
-            linestyles='dashed', colors='black'
+            y=hy, xmin=hxmin, xmax=hxmax,
+            linewidths=0.5, linestyles='dashed', colors='black'
+        )
+
+        plt.vlines(
+            x=[ t2, t2, ta, ta ],
+            ymin=[ e_min, e_mid + 0.3, e1, e_mia + 0.3 ],
+            ymax=[ e_mid - 0.3, e_max, e_mia - 0.3, ea ],
+            linewidths=0.3, colors=[ 'purple', 'black' ]
+        )
+
+        plt.text(
+            ta, e_mia, '$E_a$', ha='center', va='center', color='purple'
+        )
+        plt.text(
+            t2, e_mid, '$\Delta H$', ha='center', va='center'
         )
 
         self.yticks.extend([ e_start, e_activation, e_end ])
