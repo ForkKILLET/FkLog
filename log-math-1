@@ -1,0 +1,149 @@
+# 高等数学 I (1)
+
+# 课前说明
+
+## 课程内容
+
+- 微积分
+- 微分方程
+- 空间解析几何
+
+## 课时安排
+
+- 4-16 讲课周 $(13 \times 3 - 3) * 2 = 72$ 
+
+- 17 复习周
+- 18, 19 考试周（一般比较靠前）
+
+## 考核方式
+
+- 期末考试（闭卷，成绩占 $50\%$）
+- 平时考核
+  - 课后作业（占比平时作业很大，保证正确率）
+    - 来源：书后练习
+    - 纸质 / 电子版不限
+    - **每周四下午于 QQ 群交作业，到周日 24 点截止**
+    - **双周 01 班交作业**，单周 02 班交作业
+  - 出勤（一般不点名、由同学记录出勤情况）
+  - 阶段性测试（**期中考试**）
+    - 时间：讲完 [第三章 微分中值定理与导数的应用] 后
+    - 形式：和作业相同
+
+## 参考书
+
+- 课本背面三本
+  - 《高等数学附册 学习辅导与习题选解》
+  - 《高等数学习题全解 上、下册》（答案）
+- 《托马斯微积分》、《普林斯顿微积分》（风格详细）
+- 《数学分析》（侧重证明，包括高数 I 可能会忽略的一些证明）
+- 《吉米多维奇习题集》（针对数分的习题集，很多）
+
+# [第一章 函数与极限]
+
+## 映射
+
+- 映射 $f: n \to Y$
+- 定义域 $D_f = X$
+- 陪域：$Y$
+- 值域：$R_f = f(X) = \{ y | y = f(x), x \in X \}$
+- 分类：
+  - 函数：定义域、值域为数集
+  - 泛函：定义域为函数、值域为数集，例 $\lambda f. \int^1_0 f(x) \mathrm{d} x$
+  - 变换：定义域与值域相同，例：线性变换
+- 映射的复合：$f: Y \to Z, g: n \to Y, f \circ g = \lambda x. f(g(x))$，复合成立条件：$R_g \subseteq D_f$
+
+## 函数
+
+- 有界性
+  - 有上界：$\exists K_1. \forall x. f(x) \leq K_1$，则 $f(x)$ 有上界 $K_1$
+    - 有上确界：$\exists K_1. (\forall x. f(x) \leq K_1) \land (\forall K_1'. \forall x. f(x) \leq K_1' \implies K_1' \geq K_1)$，则 $f(x)$ 有上确界 $K_1$
+    - *有上界必有上确界*
+  - 有下界：$\exists K_2. \forall x. f(x) \geq K_2$，则 $f(x)$ 有下界 $K_2$
+  - 有界：$\exists. M \forall x. \left|f(x)\right| \leq M$，则 $f(x)$ 有界 $M$
+    - 无界：$\neg\exists. M \forall x. \left|f(x)\right| \leq M$，即 $\forall M. \exists x. |f(x)| > M$，则 $f(x)$ 无界
+    - $有界 \iff 有上界 \land 有下界$
+      - $有界 M \implies 有上界 M \land 有下界 (-M)$
+      - $有上界 K_1 \land 有下界 K_2 \implies 有界 \max\{ |K_1|, |K_2| \}$
+- 奇偶性、单调性（略）
+- 反函数
+  - 反函数存在（函数可逆）的条件：$\forall x_1. \forall x_2. f(x_1) = f(x_2) \implies x_1 = x_2$
+  - 性质：$f^{-1} \circ f = f^{-1} \circ f = \mathrm{id}$
+- 初等函数
+  - 基本初等函数
+    1. 幂函数：$f(x) = x^\alpha (\alpha \in \mathbb{R})$
+    2. 指数函数：$f(x) = a^x (a > 0)$
+    3. 对数函数：$f(x) = \log_ax (a > 0 \land a \neq 1)$
+    4. 三角函数：$\sin, \cos, \tan, \cot, \sec, \csc$
+       1. 反三角函数
+    5. 常函数：$f(x) = C (C \in \mathbb{R})$
+  - 初等函数：基本初等函数经过**有限次**四则运算、复合得到的函数
+  - 非初等函数
+    - 某些分段函数
+      - $\mathrm{sgn(x)}$
+      - $\lceil x \rceil$
+    - 无穷次复合得到的函数，如 $\sin(\sin(...\sin(x)))$
+      - 疑问：改成 $\cos$ 如何？变成常函数？
+
+## 数列的极限
+
+- 数列：$f : \Z^+ \to R$ 记作 $\{ f_n \}$，是有序、无穷的
+
+- 极限定义：$\forall \epsilon > 0. \exists N \in \N. \forall n > N. \left|x_n - a\right| < \epsilon \iff \lim_{n \to +\infty}x_n = a$
+
+  - 例题：证 $\lim_{n \to +\infty} \frac{1}{\sqrt{n + 2} + 1} = 0$
+    $$
+    \begin{align}
+    & \forall \epsilon > 0. \left| \frac{1}{\sqrt{n + 2} + 1} - 0 \right| = \frac{1}{\sqrt{n + 2} + 1} < \frac{1}{\sqrt{n + 2}} < \frac{1}{\sqrt n} < \epsilon, \sqrt n > \frac1\epsilon, n \geq \left\lceil \frac1{\epsilon^2} \right\rceil \\
+    & \forall \epsilon > 0. \exists N = \left\lceil \frac1{\epsilon^2} \right\rceil. \forall n > N. \left| \frac{1}{\sqrt{n + 2} + 1} - 0 \right| < \epsilon \\
+    & \lim_{n \to +\infty} \left| \frac{1}{\sqrt{n + 2} + 1} - 0 \right| = 0
+    \end{align}
+    $$
+
+  - 定义中 $n \in \N$ 可替换为 $n \in \Z^+$，$n > N$ 可替换为 $n \geq N$，是等价的
+
+- 定理 $1$：数列收敛则极限唯一
+  $$
+  \begin{align}
+  & \mathrm{Hyp.}\ \lim_{x \to +\infty} x_n = a \land \lim_{x \to +\infty} x_n = b \\
+  & \quad\ (\forall \epsilon > 0. \exists N. \forall n > N. \left| x_n - a \right| < \epsilon) \land (\forall \epsilon > 0. \exists N. \forall n > N. \left| x_n - b \right| < \epsilon) \\
+  & \quad \forall \epsilon > 0. \exists N. \forall n > N. \left| x_n - a \right| < \epsilon \land \left| x_n - b \right| < \epsilon \\
+  & \quad \mathrm{Hyp.}\ a \neq b \\
+  & \quad\quad \epsilon := \frac12 \left| a - b \right| \\
+  & \quad\quad \exists N. \forall n > N. \left| x_n - a \right| < \frac12\left| a - b \right| \land \left| x_n - b \right| < \frac12\left|a - b\right| \\
+  & \quad\quad \exists N. \forall n > N. \left| x_n - a \right| + \left| x_n - b \right| < \left|a - b\right| \quad \perp \\
+  & \quad a = b \\
+  & \lim_{x \to +\infty} x_n = a \land \lim_{x \to +\infty} x_n = b \implies a = b
+  \end{align}
+  $$
+
+- 定理 $2$：数列收敛则有界
+  $$
+  \begin{align}
+  & \lim_{x \to +\infty}x_n = a \\ 
+  & \mathrm{let}\ \epsilon > 0. \exists N \in \N. \forall n > N. \left| x_n - a \right| < \epsilon \\
+  & \forall n \leq N. x_n \in [\min \{ x_n | n \leq N \}, \max \{ x_n | n \leq N \}] \land \forall n > N. x_n \in (a - \epsilon, a + \epsilon) \\
+  & \forall n. x_n \in [\min \{ x_n | n \leq N \} \cup \{ a - \epsilon \}, \max \{ x_n | n \leq N \} \cup \{ a + \epsilon \}]
+  \end{align}
+  $$
+
+- 定理 $3$：保号性：$\lim_{n \to +\infty} x_n = a \implies (a > 0 \implies \exists N. \forall n > N. x_n > 0)$
+
+  - 逆否命题：$\lim_{n \to +\infty} x_n = a \implies (\exists N. \forall n > N. x_n \leq 0 \implies a \leq 0)$
+
+- 定理 $3'$：$\lim_{n \to +\infty} x_n = a \land \lim_{n \to +\infty} y_n = b \implies (a > b \implies \exists N. \forall n > N. x_n > y_n)$
+
+  - $3' \implies 3$：取 $y_n$ 为零数列即证
+
+  - $3 \implies 3'$：  
+    $$
+    \begin{align}
+    & \lim_{n \to +\infty} \{ x_n - y_n \} = \lim_{n \to +\infty} \{ x_n \} - \lim_{n \to +\infty} \{ y_n \}  = a - b > 0 \\
+    & \exists N. \forall n > N. x_n - y_n > 0 \\
+    & \exists N. \forall n > N. x_n > y_n
+    \end{align}
+    $$
+
+  - 逆否命题：$\lim_{n \to +\infty} x_n = a \land \lim_{n \to +\infty} y_n = b \implies (\exists N. \forall n > N. x_n \leq y_n \implies a \leq b)$
+
+    - 问：$\leq$ 是否可以改成 $<$  
+      不可以，反例：$\{ x_n \} = \{ -\frac1n \}, \{ y_n \} = \{ \frac1n \}$

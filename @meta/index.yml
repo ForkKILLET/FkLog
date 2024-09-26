@@ -4,11 +4,12 @@
   tags:
     - 生活
 
-- id: log-quotations
-  name: '语录'
-  time: 2023-04-05T12:46:09.439Z
+- id: log-math-1
+  name: '高数 1'
+  time: 2024-09-26T00:49:43.897Z
   tags:
-    - 生活
+    - 数学
+    - 笔记
 
 - id: log-life-1
   name: '生活 1'
@@ -104,13 +105,6 @@
   tags:
     - 化学
     - 笔记
-
-- id: log-daily-1-simple-sandbox-in-javascript
-  name: '日志 1 JS 实现简单沙箱'
-  time: 2022-10-14T09:07:52.000Z
-  tags:
-    - 日志
-    - JavaScript
 
 - id: log-daily-2-use-obs-studio-on-archlinux
   name: '日志 2 在 archlinux 上使用 OBS 虚拟摄像头'
