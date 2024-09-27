@@ -54,6 +54,8 @@
 
 ## 函数
 
+### 函数性质
+
 - 有界性
   - 有上界：$\exists K_1. \forall x. f(x) \leq K_1$，则 $f(x)$ 有上界 $K_1$
     - 有上确界：$\exists K_1. (\forall x. f(x) \leq K_1) \land (\forall K_1'. \forall x. f(x) \leq K_1' \implies K_1' \geq K_1)$，则 $f(x)$ 有上确界 $K_1$
@@ -68,23 +70,27 @@
 - 反函数
   - 反函数存在（函数可逆）的条件：$\forall x_1. \forall x_2. f(x_1) = f(x_2) \implies x_1 = x_2$
   - 性质：$f^{-1} \circ f = f^{-1} \circ f = \mathrm{id}$
-- 初等函数
-  - 基本初等函数
-    1. 幂函数：$f(x) = x^\alpha (\alpha \in \mathbb{R})$
-    2. 指数函数：$f(x) = a^x (a > 0)$
-    3. 对数函数：$f(x) = \log_ax (a > 0 \land a \neq 1)$
-    4. 三角函数：$\sin, \cos, \tan, \cot, \sec, \csc$
-       1. 反三角函数
-    5. 常函数：$f(x) = C (C \in \mathbb{R})$
-  - 初等函数：基本初等函数经过**有限次**四则运算、复合得到的函数
-  - 非初等函数
-    - 某些分段函数
-      - $\mathrm{sgn(x)}$
-      - $\lceil x \rceil$
-    - 无穷次复合得到的函数，如 $\sin(\sin(...\sin(x)))$
-      - 疑问：改成 $\cos$ 如何？变成常函数？
+
+### 初等函数
+
+- 基本初等函数
+  1. 幂函数：$f(x) = x^\alpha (\alpha \in \mathbb{R})$
+  2. 指数函数：$f(x) = a^x (a > 0)$
+  3. 对数函数：$f(x) = \log_ax (a > 0 \land a \neq 1)$
+  4. 三角函数：$\sin, \cos, \tan, \cot, \sec, \csc$
+     1. 反三角函数
+  5. 常函数：$f(x) = C (C \in \mathbb{R})$
+- 初等函数：基本初等函数经过**有限次**四则运算、复合得到的函数
+- 非初等函数
+  - 某些分段函数
+    - $\mathrm{sgn(x)}$
+    - $\lceil x \rceil$
+  - 无穷次复合得到的函数，如 $\sin(\sin(...\sin(x)))$
+    - 疑问：改成 $\cos$ 如何？变成常函数？
 
 ## 数列的极限
+
+### 数列的极限
 
 - 数列：$f : \Z^+ \to R$ 记作 $\{ f_n \}$，是有序、无穷的
 
@@ -101,7 +107,7 @@
 
   - 定义中 $n \in \N$ 可替换为 $n \in \Z^+$，$n > N$ 可替换为 $n \geq N$，是等价的
 
-- 定理 $1$：数列收敛则极限唯一
+- 定理 $1$：（极限的唯一性）数列收敛则极限唯一
   $$
   \begin{align}
   & \mathrm{Hyp.}\ \lim_{x \to +\infty} x_n = a \land \lim_{x \to +\infty} x_n = b \\
@@ -116,7 +122,7 @@
   \end{align}
   $$
 
-- 定理 $2$：数列收敛则有界
+- 定理 $2$：（收敛数列的有界性）数列收敛则有界
   $$
   \begin{align}
   & \lim_{x \to +\infty}x_n = a \\ 
@@ -126,7 +132,7 @@
   \end{align}
   $$
 
-- 定理 $3$：保号性：$\lim_{n \to +\infty} x_n = a \implies (a > 0 \implies \exists N. \forall n > N. x_n > 0)$
+- 定理 $3$：（收敛数列的保号性）$\lim_{n \to +\infty} x_n = a \implies (a > 0 \implies \exists N. \forall n > N. x_n > 0)$
 
   - 逆否命题：$\lim_{n \to +\infty} x_n = a \implies (\exists N. \forall n > N. x_n \leq 0 \implies a \leq 0)$
 
@@ -147,3 +153,13 @@
 
     - 问：$\leq$ 是否可以改成 $<$  
       不可以，反例：$\{ x_n \} = \{ -\frac1n \}, \{ y_n \} = \{ \frac1n \}$
+
+### 子列的极限
+
+- 子列：$\{ x_{n_k} \}$
+- 定理 $4$：（收敛数列的极限与其子列极限相等）$\lim_{n \to +\infty} = a \implies \forall \{ n_k \} \subseteq \Z^+. \lim_{k \to +\infty} \{ x_{n_k} \} = a$
+  - 应用：证 $\{ (-1)^n \}$ 不收敛：$\lim_{k \to +\infty} {(-1)^{2k}} = 1 \neq -1 = \lim_{k \to +\infty} {(-1)^{2k - 1}}$
+
+### 极限的运算
+
+- 例：求 $\lim_{n \to +\infty} \dfrac{2n^2 + 3}{(n + 1)^2} = \lim_{n \to +\infty} \dfrac{2 + \frac{3}{n^2}}{1 + \frac{2}{n} + \frac{1}{n^2}} = 2$
