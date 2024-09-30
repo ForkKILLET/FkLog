@@ -54,7 +54,7 @@
 
 3. 计算 $\lim_{n \to \infty} \left( 1 + \frac12 + \frac14 + \cdots + \frac1{2^n} \right)$.
    $$
-   \begin{array}{**l**}
+   \begin{array}{l}
    \lim_{n \to \infty} \left( 1 + \frac12 + \frac14 + \cdots + \frac1{2^n} \right)
    &= \lim_{n \to \infty} \left( 1 + \frac12 + \frac14 + \cdots + \frac1{2^n} + \frac1{2^n} - \frac1{2^n} \right) \\
    &= \lim_{n \to \infty} \left( 2 - \frac1{2^n} \right) \\
@@ -66,7 +66,7 @@
 
 4. 计算 $\lim_{n \to +\infty} \dfrac{1 + 2 + 3 + \cdots + (n - 1)}{n^2}$.
    $$
-   \begin{array}{**l**}
+   \begin{array}{l}
    \lim_{n \to +\infty} \dfrac{1 + 2 + 3 + \cdots + (n - 1)}{n^2}
    &= \lim_{n \to +\infty} \dfrac{\frac12 [1 + (n - 1)](n - 1)}{n^2} \\
    &= \lim_{n \to +\infty} \dfrac{n^2 - n}{2n^2} \\
@@ -77,4 +77,3 @@
    &= \frac12
    \end{array}
    $$
-   
