@@ -94,13 +94,13 @@
 
 - 数列：$f : \Z^+ \to R$ 记作 $\{ f_n \}$，是有序、无穷的
 
-- 极限定义：$\forall \epsilon > 0. \exists N \in \N. \forall n > N. \left|x_n - a\right| < \epsilon \iff \lim_{n \to +\infty}x_n = a$
+- 极限定义：$\forall \varepsilon > 0. \exists N \in \N. \forall n > N. \left|x_n - a\right| < \varepsilon \iff \lim_{n \to +\infty}x_n = a$
 
   - 例题：证 $\lim_{n \to +\infty} \frac{1}{\sqrt{n + 2} + 1} = 0$
     $$
     \begin{align}
-    & \forall \epsilon > 0. \left| \frac{1}{\sqrt{n + 2} + 1} - 0 \right| = \frac{1}{\sqrt{n + 2} + 1} < \frac{1}{\sqrt{n + 2}} < \frac{1}{\sqrt n} < \epsilon, \sqrt n > \frac1\epsilon, n \geq \left\lceil \frac1{\epsilon^2} \right\rceil \\
-    & \forall \epsilon > 0. \exists N = \left\lceil \frac1{\epsilon^2} \right\rceil. \forall n > N. \left| \frac{1}{\sqrt{n + 2} + 1} - 0 \right| < \epsilon \\
+    & \forall \varepsilon > 0. \left| \frac{1}{\sqrt{n + 2} + 1} - 0 \right| = \frac{1}{\sqrt{n + 2} + 1} < \frac{1}{\sqrt{n + 2}} < \frac{1}{\sqrt n} < \varepsilon, \sqrt n > \frac1\varepsilon, n \geq \left\lceil \frac1{\varepsilon^2} \right\rceil \\
+    & \forall \varepsilon > 0. \exists N = \left\lceil \frac1{\varepsilon^2} \right\rceil. \forall n > N. \left| \frac{1}{\sqrt{n + 2} + 1} - 0 \right| < \varepsilon \\
     & \lim_{n \to +\infty} \left| \frac{1}{\sqrt{n + 2} + 1} - 0 \right| = 0
     \end{align}
     $$
@@ -111,10 +111,10 @@
   $$
   \begin{align}
   & \mathrm{Hyp.}\ \lim_{x \to +\infty} x_n = a \land \lim_{x \to +\infty} x_n = b \\
-  & \quad\ (\forall \epsilon > 0. \exists N. \forall n > N. \left| x_n - a \right| < \epsilon) \land (\forall \epsilon > 0. \exists N. \forall n > N. \left| x_n - b \right| < \epsilon) \\
-  & \quad \forall \epsilon > 0. \exists N. \forall n > N. \left| x_n - a \right| < \epsilon \land \left| x_n - b \right| < \epsilon \\
+  & \quad\ (\forall \varepsilon > 0. \exists N. \forall n > N. \left| x_n - a \right| < \varepsilon) \land (\forall \varepsilon > 0. \exists N. \forall n > N. \left| x_n - b \right| < \varepsilon) \\
+  & \quad \forall \varepsilon > 0. \exists N. \forall n > N. \left| x_n - a \right| < \varepsilon \land \left| x_n - b \right| < \varepsilon \\
   & \quad \mathrm{Hyp.}\ a \neq b \\
-  & \quad\quad \epsilon := \frac12 \left| a - b \right| \\
+  & \quad\quad \varepsilon := \frac12 \left| a - b \right| \\
   & \quad\quad \exists N. \forall n > N. \left| x_n - a \right| < \frac12\left| a - b \right| \land \left| x_n - b \right| < \frac12\left|a - b\right| \\
   & \quad\quad \exists N. \forall n > N. \left| x_n - a \right| + \left| x_n - b \right| < \left|a - b\right| \quad \perp \\
   & \quad a = b \\
@@ -126,9 +126,9 @@
   $$
   \begin{align}
   & \lim_{x \to +\infty}x_n = a \\ 
-  & \mathrm{let}\ \epsilon > 0. \exists N \in \N. \forall n > N. \left| x_n - a \right| < \epsilon \\
-  & \forall n \leq N. x_n \in [\min \{ x_n | n \leq N \}, \max \{ x_n | n \leq N \}] \land \forall n > N. x_n \in (a - \epsilon, a + \epsilon) \\
-  & \forall n. x_n \in [\min \{ x_n | n \leq N \} \cup \{ a - \epsilon \}, \max \{ x_n | n \leq N \} \cup \{ a + \epsilon \}]
+  & \mathrm{let}\ \varepsilon > 0. \exists N \in \N. \forall n > N. \left| x_n - a \right| < \varepsilon \\
+  & \forall n \leq N. x_n \in [\min \{ x_n | n \leq N \}, \max \{ x_n | n \leq N \}] \land \forall n > N. x_n \in (a - \varepsilon, a + \varepsilon) \\
+  & \forall n. x_n \in [\min \{ x_n | n \leq N \} \cup \{ a - \varepsilon \}, \max \{ x_n | n \leq N \} \cup \{ a + \varepsilon \}]
   \end{align}
   $$
 
@@ -200,13 +200,28 @@
   
 - 例：求 $\lim_{n \to +\infty} \dfrac{2n^2 + 3}{(n + 1)^2} = \lim_{n \to +\infty} \dfrac{2 + \frac{3}{n^2}}{1 + \frac{2}{n} + \frac{1}{n^2}} = 2$
 
-
 ### 极限的存在准则
 
 - 定理（两边夹准则）：$(\exists N. \forall n > N. l_n < x_n < r_n) \land \lim_{x \to +\infty} l_n = \lim_{x \to +\infty} r_n = a \implies \lim_{x \to +\infty} x_n = a$
-- 定理：$\{ x_n \}$ 单调增且有上界，则 $\{ x_n \}$ 有极限，且极限为上确界
+- 定理：$\{ x_n \}$ 单调增/减且有上/下界，则 $\{ x_n \}$ 有极限，且极限为上/下确界
 
 ### 重要极限
 
-- $\lim_{x \to 0} \frac{\sin x}{x} = 1$
-- $\alpha$ 是无穷小，则 $\lim (1 + \alpha)^\frac{1}{\alpha} = e$
+1. $\lim_{x \to 0} \frac{\sin x}{x} = 1$
+
+2. $\alpha \neq 0$ 是无穷小，则 $\lim (1 + \alpha)^\frac{1}{\alpha} = e$，例如 $\lim_{n \to +\infty}(1 + \frac1n)^n = e$
+
+### 数列的无穷小和无穷大
+
+- 无穷小：$\lim_{n \to +\infty} x_n = 0$，则 $\{ x_n \}$ 称为无穷小（数列），或称无穷小量。
+- 无穷大
+  - 正无穷大：$\forall a. \exists N \in \N. \forall n > N. x_n > a \iff \lim_{n \to +\infty} x_n = +\infty$，则 $\{ x_n \}$ 称为正无穷大（数列）
+  - 负无穷大：$\forall a. \exists N \in \N. \forall n > N. x_n < a \iff \lim_{n \to +\infty} x_n = -\infty$，则 $\{ x_n \}$ 称为负无穷大（数列）
+  - 无穷大：$\forall a. \exists N \in \N. \forall n > N. \left| x_n \right| > a \iff \lim_{n \to +\infty} x_n = \infty$，则 $\{ x_n \}$ 称为无穷大（数列）
+
+  - 转换关系：$\lim_{n \to +\infty} x_n = +\infty \lor \lim_{n \to +\infty} x_n = -\infty \implies \lim_{n \to +\infty} x_n = \infty$
+
+  - 注意： 极限是无穷大时，极限并不存在
+- 性质
+  - $\lim_{n \to +\infty} x_n = 0 \land \forall n \in \N. x_n \neq 0 \implies \lim_{n \to +\infty} \frac{1}{x_n} = \infty$  
+  - $\lim_{n \to +\infty} x_n = +\infty \implies \lim_{n \to +\infty} \frac{1}{x_n} = 0$
