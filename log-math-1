@@ -225,3 +225,151 @@
 - 性质
   - $\lim_{n \to +\infty} x_n = 0 \land \forall n \in \N. x_n \neq 0 \implies \lim_{n \to +\infty} \frac{1}{x_n} = \infty$  
   - $\lim_{n \to +\infty} x_n = +\infty \implies \lim_{n \to +\infty} \frac{1}{x_n} = 0$
+
+### 极限的未定式
+
+- 未定式
+  - 加减：$(+\infty) + (-\infty), (+\infty) - (+\infty), \infty + \infty, \cdots$
+  - 乘：$0 \cdot \infty$
+  - 除：$\dfrac00, \dfrac{\infty}{\infty}$
+- 四则运算推广：不是未定式，都可以应用极限的四则运算规则
+
+## 函数的极限
+
+- 自变量的变化过程
+  - 趋于有限值：$x \to x_0$
+    - 从右侧趋近：$x \to x_0^+$
+    - 从左侧趋近：$x \to x_0^-$
+  - 趋于无穷大：$x \to +\infty$
+    -  趋于正无穷：$x \to -\infty$
+    - 趋于负无穷：$x \to \infty$
+- 邻域
+  - $U(x, \delta) = (x - \delta, x + \delta)$
+  - 去心邻域 $\mathring U(x, \delta) = U(x) \backslash \{ x \}$
+  - 左邻域 $(x - \delta, x]$，去心左邻域 $(x - \delta, x)$
+  - 右邻域 $(x, x + \delta)$，去心左邻域 $(x, x + \delta)$
+- 极限定义
+  - 自变量趋于有限值的极限：$\lim_{x \to x_0} f(x) = a \iff \forall \varepsilon > 0. \exists \delta > 0. \forall x \neq x_0. (\left| x - x_0 \right| < \delta \rightarrow \left| f(x) - a \right| < \varepsilon)$
+    - 用邻域表述：$\lim_{x \to x_0} f(x) = a \iff \forall \varepsilon > 0. \exists \delta > 0. \forall x \in \mathring U(x_0, \delta). \left| f(x) - a \right| < \varepsilon$
+    - 右极限：$\lim_{x \to x_0^+} f(x) = a \iff \forall \varepsilon > 0. \exists \delta > 0. \forall x \in (x_0, x_0 + \delta). \left| f(x) - a \right| < \varepsilon$
+    - 左极限：$\lim_{x \to x_0^+} f(x) = a \iff \forall \varepsilon > 0. \exists \delta > 0. \forall x \in (x_0 - \delta, x_0). \left| f(x) - a \right| < \varepsilon$
+    - 关系：$有左极限 \land 有右极限 \land 左极限 = 右极限 \iff 有极限$
+  - 自变量趋于无穷大的极限：
+    - 趋于正无穷：$\lim_{x \to +\infty} f(x) = a \iff \forall \varepsilon > 0. \exists \delta. \forall x > \delta. \left| f(x) - a \right| < \varepsilon$
+    - 趋于负无穷：$\lim_{x \to -\infty} f(x) = a \iff \forall \varepsilon > 0. \exists \delta. \forall x < \delta. \left| f(x) - a \right| < \varepsilon$
+
+### 函数的无穷小和无穷大
+
+- 无穷小：$\lim_{x \to \alpha} f(x) = 0$，则称 $f(x)$ 为 $x \to \alpha$ 时的无穷小（函数）、无穷小量
+- 无穷大：$\lim_{x \to \alpha} f(x) = \infty$，则称 $f(x)$ 为 $x \to \alpha$ 时的无穷大（函数）无穷大量
+- 关系：倒数关系
+- 比较：对无穷小 $\alpha$ 和 $\beta$：
+  - $\lim \dfrac{\alpha}{\beta} = C \neq 0 \iff \alpha\ 是与\ \beta\ 同阶的无穷小 \iff \alpha = O(\beta)$
+    - $\lim \dfrac{\alpha}{\beta} = 1 \iff \alpha \sim b \iff \alpha\ 和\ \beta\ 是等价无穷小$（易证 $\sim$ 是等价关系）
+  - $\lim \dfrac{\alpha}{\beta} = 0 \iff \alpha\ 是比\ \beta\ 高阶的无穷小 \iff \alpha = o(\beta)$
+    - $\lim \dfrac{\alpha}{\beta^k} = C \neq 0 \iff \alpha\ 是关于\ \beta\ 的\ k\ 阶无穷小$
+  - $\lim \dfrac{\alpha}{\beta} = \infty \iff \alpha\ 是比\ \beta\ 高阶的无穷小 \iff \beta = o(\alpha)$
+
+### 常见等价无穷小
+
+注：以下无穷小的变化过程均为 $x \to 0$
+
+- $x \sim \sin x \sim \tan x \sim \mathrm{arctan}\ x \sim \mathrm{arcsin}\ x \sim e^x - 1 \sim \ln(x + 1)$  
+  $$
+  \begin{align}
+  \lim_{x \to 0} \frac{\ln(1 + x)}{x} &= \lim_{x \to 0} \frac1x \ln(1 + x) \\
+  &= \lim_{x \to 0} \left( \ln(1 + x)^\frac1x \right) \\
+  &= \ln \left( \lim_{x \to 0} (1 + x)^\frac1x \right) \quad {\color{blue}(连续函数与极限符号可以交换位置)} \\
+  &= \ln e \\
+  &= 1
+  
+  \end{align}
+  $$
+  
+- $1 - \cos x \sim \frac12 x^2$  
+  $$
+  \begin{align}
+  \lim_{x \to 0} \frac{1 - \cos x}{\frac12 x^2} &= \lim_{x \to 0} \frac{2 \sin^2 \frac{x}{2}}{\frac12 x^2} \\
+  &= \lim_{x \to 0} \frac{2 \left( \frac{x}{2} \right)^2}{\frac12 x^2} \quad {\color{blue}(\sin x \sim x )} \\
+  &= 1
+  \end{align}
+  $$
+  
+- $\forall \alpha \in \R. (1 + x)^\alpha - 1 \sim \alpha x$  
+  $$
+  \begin{align}
+  \lim_{x \to 0} \frac{(1 + x)^\alpha - 1}{\alpha x} &= \lim_{x \to 0} \frac{e ^ {\alpha\ln(1 + x)} - 1}{\alpha x} \\
+  &= \lim_{x \to 0} \frac{e^{\alpha x} - 1}{\alpha x} \quad {\color{blue}(\ln (1 + x) \sim x)} \\
+  &= 1 \quad {\color{blue}(e^x - 1 \sim x)}
+  \end{align}
+  $$
+
+
+### 海涅定理
+
+- 定理 $\lim_{x \to \alpha} f(x) = \beta \iff \forall \{ x_n \}. \lim_{n \to +\infty} x_n = \alpha \implies \lim_{n \to +\infty} f(x_n) = \beta$
+
+- 例：证明 $\lim_{x \to +\infty} x \sin x \neq \infty$  
+  $$
+    \begin{align}
+    & x_n := n\pi \\
+    & \lim_{n \to +\infty} x_n = +\infty \\
+    & \lim_{n \to +\infty} x_n \sin x_n = x_n \cdot 0 = 0 \neq \infty \\
+    & \lim_{x \to +\infty} x \sin x \neq \infty
+    \end{align}
+  $$
+
+### 函数极限的运算
+
+- 四则运算：极限不是未定式时，有四则运算规则
+
+  - $\lim (f(x) \pm g(x)) = \lim f(x) \pm \lim g(x)$
+  - $\lim (f(x)g(x)) = (\lim f(x))(\lim g(x))$
+  - $\lim \dfrac{f(x)}{g(x)} = \dfrac{\lim f(x)}{\lim g(x)}$
+- 等价无穷小代换：极限式中，乘除位置的无穷小可以代换为等价无穷小
+
+  - 例  
+    $$
+    \begin{align}
+    \lim_{x \to 0} \frac{(1 + x^2)^\frac13 - 1}{(e^{3x} - e^x) x} &= \lim_{x \to 0} \frac{\frac13 x^2}{e^x (e^{2x} - 1) x} \\
+    &= \lim_{x \to 0} \frac{\frac13 x^2}{e^x \cdot 2x \cdot x} \\
+    &= \lim_{x \to 0} \frac{1}{6e^x} \\
+    &= \frac16
+    \end{align}
+    $$
+
+## 函数的连续
+
+### 连续的定义
+
+- 单点连续（TFAE）
+
+  - 用 $\varepsilon-\delta$ 语言定义
+    - 左连续：$\forall \varepsilon > 0. \exists \delta > 0. \forall x \in (x_0 - \delta, x_0). \left| f(x) - f(x_0) \right| < \varepsilon \iff f(x)\ 在\ x_0\ 处左连续$
+    - 右连续：$\forall \varepsilon > 0. \exists \delta > 0. \forall x \in (x_0, x_0 + \delta). \left| f(x) - f(x_0) \right| < \varepsilon \iff f(x)\ 在\ x_0\ 处右连续$
+    - 连续：$\forall \varepsilon > 0. \exists \delta > 0. \forall x \in (x_0 - \delta, x_0 + \delta). \left| f(x) - f(x_0) \right| < \varepsilon \iff f(x)\ 在\ x_0\ 处连续$
+  - 用改变量定义
+    - 左连续：$\lim_{\Delta x \to 0^-} \Delta y = \lim_{\Delta x \to 0^-}[f(x_0 + \Delta x) - f(x_0)] = 0$
+    - 右连续：$\lim_{\Delta x \to 0^+} \Delta y = \lim_{\Delta x \to 0^+}[f(x_0 + \Delta x) - f(x_0)] = 0$
+    - 连续：$\lim_{\Delta x \to 0} \Delta y = \lim_{\Delta x \to 0}[f(x_0 + \Delta x) - f(x_0)] = 0$
+  - 用极限定义
+    - 左连续：$\lim_{x \to x_0^-} f(x) = f(x_0)$
+    - 右连续：$\lim_{x \to x_0^+} f(x) = f(x_0)$
+    - 连续：$\lim_{x \to x_0} f(x) = f(x_0)$
+
+- 区间连续
+  - 开区间连续：$\forall x_0 \in (a, b). f(x)\ 在\ x_0\ 处连续 \iff f(x)\ 在\ (a, b)\ 上连续$
+
+  - 闭区间连续：$\forall x_0 \in (a, b). f(x)\ 在\ x_0\ 处连续 \land f(x)\ 在\ a\ 处右连续 \land f(x)\ 在\ b\ 处左连续 \iff f(x)\ 在\ [a, b]\ 上连续$
+
+- 连续函数：在定义域上连续的函数
+
+### 间断点
+
+
+
+### 连续函数的运算
+
+- 连续函数四则运算后，在定义域上连续
+- 连续函数的反函数在定义域上连续
+- 连续函数复合连续后，在定义域上连续
