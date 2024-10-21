@@ -373,3 +373,12 @@
 - 连续函数四则运算后，在定义域上连续
 - 连续函数的反函数在定义域上连续
 - 连续函数复合连续后，在定义域上连续
+
+### 闭区间上连续函数的性质
+
+记闭区间 $[a, b]$ 上连续函数构成的集合为 $C[a, b] := \{ f(x) | D_f = [a, b] \land C_{f(x)} \}$
+
+- 定理 $1$：（有界性与最大值最小值定理）$\forall f(x) \in C[a, b]. (\exist M. \forall x. \left| f(x) \right| < M) \implies (\exists x_M \in [a, b]. \forall x \in [a, b]. f(x) \le f(x_M)) \land (\exists x_m \in [a, b]. \forall x \in [a, b]. f(x) \ge f(x_m))$
+
+- 定理 $2$：（零点定理）$\forall f(x) \in C[a, b]. f(a)f(b) < 0 \implies \exists \xi \in (a, b). f(\xi) = 0$
+- 定理 $3$：（介值定理）$\forall f(x) \in C[a, b]. \forall y \in (\min \{ f(a), f(b) \}, \max \{ f(a), f(b) \}). \exists \xi \in (a, b). f(\xi) = y$
