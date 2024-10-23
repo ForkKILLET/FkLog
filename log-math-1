@@ -38,6 +38,8 @@
 - 《数学分析》（侧重证明，包括高数 I 可能会忽略的一些证明）
 - 《吉米多维奇习题集》（针对数分的习题集，很多）
 
+---
+
 # [第一章 函数与极限]
 
 ## 映射
@@ -387,3 +389,11 @@
 
 - 定理 $2$：（零点定理）$\forall f(x) \in C[a, b]. f(a)f(b) < 0 \implies \exists \xi \in (a, b). f(\xi) = 0$
 - 定理 $3$：（介值定理）$\forall f(x) \in C[a, b]. \forall y \in (\min \{ f(a), f(b) \}, \max \{ f(a), f(b) \}). \exists \xi \in (a, b). f(\xi) = y$
+
+---
+
+# [第二章：导数与微分]
+
+## 导数
+
+- 定义：$\frac{\mathrm{d}y}{\mathrm{d}x} = f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}$
