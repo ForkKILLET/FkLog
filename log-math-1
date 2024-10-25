@@ -80,8 +80,8 @@
   2. 指数函数：$f(x) = a^x (a > 0)$
   3. 对数函数：$f(x) = \log_ax (a > 0 \land a \neq 1)$
   4. 三角函数：$\sin, \cos, \tan, \cot, \sec, \csc$
-     1. 反三角函数
-  5. 常函数：$f(x) = C (C \in \mathbb{R})$
+  5. 反三角函数
+  6. 常函数：$f(x) = C (C \in \mathbb{R})$
 - 初等函数：基本初等函数经过**有限次**四则运算、复合得到的函数
 - 非初等函数
   - 某些分段函数
@@ -396,4 +396,47 @@
 
 ## 导数
 
-- 定义：$\frac{\mathrm{d}y}{\mathrm{d}x} = f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}$
+### 导数和可导
+
+- 导数：$\displaystyle f'(x_0) = \lim_{\Delta x \to 0}\frac{\Delta y}{\Delta x} = \lim_{\Delta x \to 0} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}$
+
+  - 注
+    - $f'(x_0)$ 为 $f(x)$ 在 $x_0$ 处的导数
+    - $f'(x)$ 为 $f(x)$ 的导函数，也简称导数
+    - $\lim_{\Delta x \to 0}\frac{\Delta y}{\Delta x} = \infty$ 时，记 $f'(x_0) = \infty$，即导数为无穷大（但此时导数不存在，就和这个极限不存在一样）
+  - 单侧导数
+    - 左导数：$\displaystyle f'_-(x_0) = \lim_{\Delta x \to 0^-}\frac{\Delta y}{\Delta x} = \lim_{\Delta x \to 0^-} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}$
+    - 右导数：$\displaystyle f'_+(x_0) = \lim_{\Delta x \to 0^+}\frac{\Delta y}{\Delta x} = \lim_{\Delta x \to 0^+} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}$
+
+- 单点可导，有充要条件：
+  $$
+  \begin{align}
+  f(x)\ 在\ x_0\ 处可导
+  &\iff 导数\  f'(x_0)\ 存在 \\
+  &\iff 极限\ \lim_{\Delta x \to 0}\frac{\Delta y}{\Delta x}\ 存在 \\
+  &\iff 左极限\ \lim_{\Delta x \to 0^-}\frac{\Delta y}{\Delta x}\ 存在 \land 右极限\ \lim_{\Delta x \to 0^-}\frac{\Delta y}{\Delta x}\ 存在 \land \lim_{\Delta x \to 0^-}\frac{\Delta y}{\Delta x} = \lim_{\Delta x \to 0^+}\frac{\Delta y}{\Delta x} \\
+  &\iff 左导数\ f'_-(x_0)\ 存在 \land 右导数\ f'_+(x_0)\ 存在 \land f'_-(x_0) = f'_+(x_0)
+  \end{align}
+  $$
+
+- 区间可导
+
+  - 开区间可导：$\forall x_0 \in (a, b). f(x)\ 在\ x_0\ 处可导 \iff f(x)\ 在\ (a, b)\ 上可导$
+
+  - 闭区间连续：$\forall x_0 \in (a, b). f(x)\ 在\ x_0\ 处可导 \land f'_+(a)\ 存在 \land f'_-(b)\ 存在 \iff f(x)\ 在\ [a, b]\ 上连续$
+
+### 求导法则
+
+- $(u(x)v(x))' = u'(x)v(x) + u(x)v'(x)$  
+  证：  
+  $$
+  \begin{align}
+  (u(x)v(x))'
+  &= \lim_{\Delta x \to 0} \frac{u(x + \Delta x)v(x + \Delta x) - u(x)v(x)}{\Delta x} \\
+  &= \lim_{\Delta x \to 0} \frac{u(x + \Delta x)v(x + \Delta x) - u(x + \Delta x)v(x) + u(x + \Delta x)v(x) - u(x)v(x)}{\Delta x} \\
+  &= \lim_{\Delta x \to 0} \frac{u(x + \Delta x)[v(x + \Delta x) - v(x)] + [u(x + \Delta x) - u(x)]v(x)}{\Delta x} \\
+  &= \lim_{\Delta x \to 0} \left[ u(x + \Delta x) \cdot \frac{v(x + \Delta x) - v(x)}{\Delta x} + \frac{u(x + \Delta x) - u(x)}{\Delta x} \cdot v(x) \right] \\
+  &= \lim_{\Delta x \to 0} \left[ u(x + \Delta x) \cdot v'(x) + u'(x) \cdot v(x) \right] \\
+  &= u(x)v'(x) + u'(x)v(x)
+  \end{align}
+  $$

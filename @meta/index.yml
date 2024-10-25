@@ -25,6 +25,42 @@
     - 数学
     - 作业
 
+- id: log-daily-2-use-obs-studio-on-archlinux
+  name: '日志 2 在 archlinux 上使用 OBS 虚拟摄像头'
+  time: 2022-10-14T09:07:52.000Z
+  tags:
+    - 日志
+    - Linux
+
+- id: log-daily-3-file-system-learning-1
+  name: '日志 3 文件系统学习 1'
+  time: 2022-10-14T09:07:52.000Z
+  tags:
+    - 日志
+    - Linux
+
+- id: log-daily-4-render-markdown-and-latex-in-vue
+  name: '日志 4 Vue 中渲染 Markdown 和 LaTeX'
+  time: 2022-10-14T09:07:52.000Z
+  tags:
+    - 日志
+    - Web
+
+- id: log-daily-6-gitalk-but-inwallnet
+  name: '日志 6 Gitalk，但在因瓦网'
+  time: 2022-11-04T04:40:58.000Z
+  tags:
+    - 日志
+    - Web
+
+- id: log-daily-7-perhaps-a-better-hkt-workaround-for-typescript
+  name: '日志 7 一个也许更好的 TypeScript 高阶类型'
+  time: 2024-10-25T10:17:06.151Z
+  tags:
+    - 日志
+    - TypeScript
+    - 类型
+
 - id: log-life-1
   name: '生活 1'
   time: 2023-05-02T13:02:55.166Z
@@ -119,34 +155,6 @@
   tags:
     - 化学
     - 笔记
-
-- id: log-daily-2-use-obs-studio-on-archlinux
-  name: '日志 2 在 archlinux 上使用 OBS 虚拟摄像头'
-  time: 2022-10-14T09:07:52.000Z
-  tags:
-    - 日志
-    - Linux
-
-- id: log-daily-3-file-system-learning-1
-  name: '日志 3 文件系统学习 1'
-  time: 2022-10-14T09:07:52.000Z
-  tags:
-    - 日志
-    - Linux
-
-- id: log-daily-4-render-markdown-and-latex-in-vue
-  name: '日志 4 Vue 中渲染 Markdown 和 LaTeX'
-  time: 2022-10-14T09:07:52.000Z
-  tags:
-    - 日志
-    - Web
-
-- id: log-daily-6-gitalk-but-inwallnet
-  name: '日志 6 Gitalk，但在因瓦网'
-  time: 2022-11-04T04:40:58.000Z
-  tags:
-    - 日志
-    - Web
 
 - id: log-sheep-book-chapter-1
   name: '隔壁老飏的小说（名字待定）卷 1'
