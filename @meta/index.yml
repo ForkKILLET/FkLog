@@ -54,8 +54,8 @@
     - Web
 
 - id: log-daily-7-perhaps-a-better-hkt-workaround-for-typescript
-  name: '日志 7 一个也许更好的 TypeScript 高阶类型'
-  time: 2024-10-25T10:17:06.151Z
+  name: '日志 7 一个也许更好的 TypeScript 高阶类型实现'
+  time: 2024-10-25T10:23:49.345Z
   tags:
     - 日志
     - TypeScript
