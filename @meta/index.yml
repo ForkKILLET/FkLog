@@ -25,6 +25,13 @@
     - 数学
     - 作业
 
+- id: log-math-ex-3
+  name: '高数作业 3'
+  time: 2024-11-02T20:33:40.096Z
+  tags:
+    - 数学
+    - 作业
+
 - id: log-daily-2-use-obs-studio-on-archlinux
   name: '日志 2 在 archlinux 上使用 OBS 虚拟摄像头'
   time: 2022-10-14T09:07:52.000Z
