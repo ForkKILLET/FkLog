@@ -34,7 +34,14 @@
 
 - id: log-math-ex-mid
   name: '高数作业 期中'
-  time: 2024-11-15T03:24:06.557Z
+  time: 2024-11-17T16:45:56.729Z
+  tags:
+    - 数学
+    - 作业 
+
+- id: log-math-ex-4
+  name: '高数作业 4'
+  time: 2024-11-17T16:45:56.729Z
   tags:
     - 数学
     - 作业

@@ -52,19 +52,19 @@ $$
    即证
    $$
    \begin{align}
-   [f'(\xi) + 2\xi f(\xi)] e^{2\xi} &= 0 \\
-   f'(\xi) \cdot e^{2\xi} + f(\xi) \cdot 2\xi e^{2\xi} &= 0
+   [f'(\xi) + 2\xi f(\xi)] \cancel{e^{2\xi}}{\color{red} e^{\xi^2}} &= 0 \\
+   f'(\xi) \cdot \cancel{e^{2\xi}}{\color{red} e^{\xi^2}} + f(\xi) \cdot 2\xi \cancel{e^{2\xi}}{\color{red} e^{\xi^2}} &= 0
    \end{align}
    $$
-   设 $\displaystyle g(x) = f(x)e^{2x}$，即证
+   设 $\cancel{\displaystyle g(x) = f(x)e^{2x}} \ {\color{red} \displaystyle g(x) = f(x)e^{x^2}}$，即证
    $$
    g'(\xi) = 0
    $$
 
    因为
 
-   - $f(x), e^{2x}$ 在 $[a, b]$ 上连续，所以 $g(x)$ 在 $[a, b]$ 上连续；
-   - $f(x), e^{2x}$ 在 $(a, b)$ 内可导，所以 $g(x)$ 在 $(a, b)$ 内可导；
+   - $f(x), \cancel{e^{2x}} {\color{red} e^{x^2}}$ 在 $[a, b]$ 上连续，所以 $g(x)$ 在 $[a, b]$ 上连续；
+   - $f(x), \cancel{e^{2x}} {\color{red} e^{x^2}}$ 在 $(a, b)$ 内可导，所以 $g(x)$ 在 $(a, b)$ 内可导；
    - $g(a) = g(b) = 0$
 
    所以由罗尔定理得
