@@ -1,0 +1,38 @@
+## 安装
+
+### 安装 OBS Studio
+
+```bash
+sudo pacman -S obs-studio
+```
+
+OBS Studio 从 26.1 版本开始原生支持虚拟摄像头. 在此之前需要安装 [v4l2sink](https://github.com/CatxFish/obs-v4l2sink) 插件：
+
+```bash
+paru -S obs-v4l2sink
+```
+
+### 安装 v4l2loopback 内核模块
+
+```bash
+sudo pacman -S v4l2loopback-dkms 
+```
+
+如果安装过程中报错 `kernel header` 相关，应安装（更新）之：
+
+```bash
+sudo pacman -Syy linux-headers
+```
+
+安装成功后，重启或者手动启用使内核模块生效：
+```bash
+sudo modprobe v4l2loopback
+```
+
+## 使用
+
+正常使用图形界面即可.
+
+需要注意的是：虚拟摄像头选项并不在 `工具` 菜单中（一些过时的教程中是这样的），而在 `控件` 栏目里.
+
+![screenshot:obs virtual camera](https://s2.loli.net/2022/04/19/DKUjwmcQPJTeAVt.png)
