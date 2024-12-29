@@ -1,13 +1,13 @@
-log-*
+*
 
-!log-math-*
-!log-chemistry-*
-!log-physics-*
-!log-quotations
-!log-friends
-!log-daily-*
-!log-life-*
-!log-sheep-book-*
+!friends.md
+
+!math
+!chemistry
+!physics
+!daily
+!life
+!novel
 
 *.pdf
 *.zip

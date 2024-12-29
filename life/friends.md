@@ -66,4 +66,13 @@ f-card > p {
             <p>一个笨蛋</p>
         </f-card>
     </f-friend>
+    <f-friend>
+        <f-avatar>
+            <img src="https://lunasakura.top/lunasakura.png" alt="lunasakura-avatar" />
+        </f-avatar>
+        <f-card>
+            <a href="https://lunasakura.top/" target="_blank">Luna Sakura</a>
+            <p>Love is murderous utopia.</p>
+        </f-card>
+    </f-friend>
 </f-friend-list>

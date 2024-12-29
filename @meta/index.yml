@@ -1,87 +1,87 @@
-- id: log-friends
+- id: life/friends.md
   name: '友情链接'
   time: 2024-11-03T08:24:09.723Z
   tags:
     - 生活
 
-- id: log-math-1
+- id: math/1.md
   name: '高数 1'
   time: 2024-10-23T00:29:36.213Z
   tags:
     - 数学
     - 笔记
 
-- id: log-math-ex-1
+- id: math/ex-1.md
   name: '高数作业 1'
   time: 2024-09-27T01:51:31.037Z
   tags:
     - 数学
     - 作业
 
-- id: log-math-ex-2
+- id: math/ex-2.md
   name: '高数作业 2'
   time: 2024-10-21T01:11:53.560Z
   tags:
     - 数学
     - 作业
 
-- id: log-math-ex-3
+- id: math/ex-3.md
   name: '高数作业 3'
   time: 2024-11-02T20:33:40.096Z
   tags:
     - 数学
     - 作业
 
-- id: log-math-ex-mid
+- id: math/ex-mid.md
   name: '高数作业 期中'
   time: 2024-11-17T16:45:56.729Z
   tags:
     - 数学
     - 作业 
 
-- id: log-math-ex-4
+- id: math/ex-4.md
   name: '高数作业 4'
   time: 2024-11-17T16:45:56.729Z
   tags:
     - 数学
     - 作业
 
-- id: log-math-ex-5
+- id: math/ex-5.md
   name: '高数作业 5'
   time: 2024-12-02T04:01:39.351Z
   tags:
     - 数学
     - 作业
 
-- id: log-daily-2-use-obs-studio-on-archlinux
+- id: daily/2-use-obs-studio-on-archlinux.md
   name: '日志 2 在 archlinux 上使用 OBS 虚拟摄像头'
   time: 2022-10-14T09:07:52.000Z
   tags:
     - 日志
     - Linux
 
-- id: log-daily-3-file-system-learning-1
+- id: daily/3-file-system-learning-1.md
   name: '日志 3 文件系统学习 1'
   time: 2022-10-14T09:07:52.000Z
   tags:
     - 日志
     - Linux
 
-- id: log-daily-4-render-markdown-and-latex-in-vue
+- id: daily/4-render-markdown-and-latex-in-vue.md
   name: '日志 4 Vue 中渲染 Markdown 和 LaTeX'
   time: 2022-10-14T09:07:52.000Z
   tags:
     - 日志
     - Web
 
-- id: log-daily-6-gitalk-but-inwallnet
+- id: daily/6-gitalk-but-inwallnet.md
   name: '日志 6 Gitalk，但在因瓦网'
   time: 2022-11-04T04:40:58.000Z
   tags:
     - 日志
     - Web
 
-- id: log-daily-7-perhaps-a-better-hkt-workaround-for-typescript
+- id: daily/7-perhaps-a-better-hkt-workaround-for-typescript.md
   name: '日志 7 一个也许更好的 TypeScript 高阶类型实现'
   time: 2024-10-25T10:23:49.345Z
   tags:
@@ -89,102 +89,102 @@
     - TypeScript
     - 类型
 
-- id: log-life-1
+- id: life/1.md
   name: '生活 1'
   time: 2023-05-02T13:02:55.166Z
   tags:
     - 生活
 
-- id: log-life-misaka
+- id: life/misaka.md
   name: '御坂 49374'
   time: 2023-04-16T09:27:07.249Z
   tags:
     - 生活
 
-- id: log-chemistry-1
+- id: chemistry/1.md
   name: '化学笔记 1'
   time: 2022-10-27T03:30:42.000Z
   tags:
     - 化学
     - 笔记
 
-- id: log-chemistry-2
+- id: chemistry/2.md
   name: '化学笔记 2'
   time: 2022-10-14T09:07:52.000Z
   tags:
     - 化学
     - 笔记
 
-- id: log-chemistry-3
+- id: chemistry/3.md
   name: '化学笔记 3'
   time: 2022-10-14T09:09:14.000Z
   tags:
     - 化学
     - 笔记
 
-- id: log-chemistry-4
+- id: chemistry/4.md
   name: '化学笔记 4'
   time: 2022-10-14T09:07:52.000Z
   tags:
     - 化学
     - 笔记
 
-- id: log-chemistry-5
+- id: chemistry/5.md
   name: '化学笔记 5'
   time: 2022-11-06T11:03:19.000Z
   tags:
     - 化学
     - 笔记
 
-- id: log-chemistry-6
+- id: chemistry/6.md
   name: '化学笔记 6'
   time: 2023-03-05T09:33:24.000Z
   tags:
     - 化学
     - 笔记
 
-- id: log-chemistry-7
+- id: chemistry/7.md
   name: '化学笔记 7'
   time: 2023-03-05T09:33:18.000Z
   tags:
     - 化学
     - 笔记
 
-- id: log-chemistry-8
+- id: chemistry/8.md
   name: '化学笔记 8'
   time: 2023-03-05T09:33:24.000Z
   tags:
     - 化学
     - 笔记
 
-- id: log-chemistry-9
+- id: chemistry/9.md
   name: '化学笔记 9'
   time: 2023-03-30T13:37:17.503Z
   tags:
     - 化学
     - 笔记
 
-- id: log-physics-1
+- id: physics/1.md
   name: '物理笔记 1'
   time: 2022-10-14T09:07:52.000Z
   tags:
     - 物理
     - 笔记
 
-- id: log-physics-2
+- id: physics/2.md
   name: '物理笔记 2'
   time: 2023-03-14T10:31:18.875Z
   tags:
     - 物理
     - 笔记
 
-- id: log-chemistry-tutor
+- id: chemistry/tutor.md
   name: '化学笔记导师制'
   tags:
     - 化学
     - 笔记
 
-- id: log-sheep-book-chapter-1
+- id: novel/sheep-book-chapter-1.md
   name: '隔壁老飏的小说（名字待定）卷 1'
   time: 2023-03-05T09:33:18.000Z
   tags:
