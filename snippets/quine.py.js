@@ -1,0 +1,1 @@
+p = eval(["console.log","print"][+(1 in [1])]); q = "'"; s = 'p = eval(["console.log","print"][+(1 in [1])]); q = "^"; s = %; p(s.replace("^", q, 1).replace("%", q+s+q, 1))'; p(s.replace("^", q, 1).replace("%", q+s+q, 1))
